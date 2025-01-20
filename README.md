@@ -1,10 +1,10 @@
-Group Name   :
-Website Title:
-Group Leader :
-Group Member1:
-Group Member2:
-Group Member3:
-Group Member4:
+- Group Name   : CS Girlies
+- Website Title: The Thessaloniki Survival Guide
+- Group Leader : Chrysa Arampatzi
+- Group Member1: Iva Doycheva
+- Group Member2: Aleksia Kapurani
+- Group Member3: Leandra Krasniqi
+- Group Member4: Maria Bosi
 
 ## Instructions:
 - clone this repo
