@@ -1,0 +1,337 @@
+/* CHRYSA ARAMPATZI */
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap'); 
+*
+body {
+    font-family: 'Geist', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('../images/about-us-bg-edited\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+/* Header */
+.header {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    width: 100vw;
+    position: absolute;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 10;
+    margin-right: 100px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 6px;
+}
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: block;
+}
+.site-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.header-nav{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+.header-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.header-nav .dropdown {
+    position: relative;
+}
+
+.header-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 55;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.header-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+.team {
+    text-align: center;
+    padding: 20px;
+    padding-top: 200px;
+}
+
+.team-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.team-card-L, .team-card-R {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #9eb8d1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 75%;
+    height: 500px;
+    max-width: 1200px;
+}
+
+.team-card-L {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.team-card-R {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.team-card-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-card-left img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-card-left h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-card-left p {
+    font-size: 1.2rem;
+    color: #546477;
+}
+
+.team-card-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    text-align: left;
+    margin-top: 70px;
+}
+
+.team-card-right h3 {
+    margin-top: -15%;
+    font-size: 5rem;
+    margin-bottom: 0rem;
+}
+
+.team-card-right h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 10px;
+}
+
+.team-card-right p {
+    font-size: 1rem;
+    color: #546477;
+}
+
+.team-card-right .btn-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.team-card-right .btn {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    color: white;
+    background-color: #182636;
+    text-decoration: none;
+    border-radius: 15px; 
+    text-align: center;
+    border: transparent 2px solid;
+}
+
+.team-card-right .btn:hover {
+    background-color: transparent;
+    border: #182636 2px solid;
+    color: #182636;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+}
+
+.email a {
+    color: #546477;
+}
+
+.email-icon {
+    width: 19px !important;
+    height: 14px !important;
+    object-fit: contain;
+    border-radius: 0% !important;
+    margin-bottom: 0px !important;
+    vertical-align: middle !important;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 5;
+    margin-top: -70px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+
+.footer-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.footer-nav .dropdown {
+    position: relative;
+}
+
+.footer-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 150;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: bottom center;
+}
+
+.footer-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 150;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.footer-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.questions-section,
+.footer {
+    margin: 0; /* Remove unwanted margins */
+}
+

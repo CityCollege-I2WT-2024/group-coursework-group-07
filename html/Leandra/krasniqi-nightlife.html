@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!-- Developed by: Leandra Krasniqi  -->
+<html>
+    <head>
+        <!--HTML page: Nightlife by Leandra Krasniqi-->
+        <title>
+            Thessaloniki Survival Guide
+        </title>
+        <!--Icon at the top of screen-->
+        <link rel="icon" type="image/x-icon" href="../../images/ribbon-bow.png">
+
+        <!--CSS Files-->
+        <link rel="stylesheet" type="text/css" href="../../other (css & js)/Leandra/krasniqi-nightlife.css">
+        <!--Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <!-- Leaflet MarkerCluster CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" />
+        
+        <!--Javacript files-->
+        <script src="../../other (css & js)/Leandra/krasniqi-nightlife.js"></script>
+        <!--Leaflet Javascript -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <!--Leaflet MarkerCluster JavaScript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js" defer></script>
+    </head>
+    <body>
+
+        <!--This is the NIGHTLIFE Page-->
+
+        <!--Header made by Chrysoula Arampatzi-->
+        <header class="header">
+            <div class="header-container">
+                <a href="../../index.html" class="logo-link">
+                <div class="logo">
+                    <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+                    <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+                </div>
+                </a>
+                <nav>
+                    <ul class="header-nav">
+                        <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="../Iva/entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Iva/cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="../Iva/culture.html">Culture</a></li>
+                                <li><a href="../Iva/events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Intro Section -->
+        <!--This section is the introduction to the the City Lifes Nightlife page-->
+        <div class="parts">
+            <div class="introimage">
+                <img src="../../images/vecteezy_ai-generated-top-view-of-mojito-cocktail-alcohol-drink-png_38072940.png" alt="Cocktail PNG">
+            </div>
+            <div class="content">
+                <h1 class="heading" style="font-size: 2.5rem;">Experience Thessaloniki by Night</h1>
+                <p id="abstract">Thessaloniki by night transforms into a lively playground of music, lights, and endless entertainment. As the sun sets, the city’s bars and nightlife spots come alive, reflecting its vibrant energy. Known as a nightlife hub in Greece, Thessaloniki offers something for every taste, from trendy cocktail bars in Ladadika and Valaoritou to traditional tavernas with live music in Ano Poli. Sip on signature cocktails or local wines, and let the city's charm guide you through its buzzing streets. Whether you’re drawn to the pulsing beats of a club or the intimate ambiance of a rooftop bar with stunning views, Thessaloniki ensures every night is unforgettable.</p>
+                <h2 class="under-heading">"Some of the best conversations happen over a drink under dim lights."</h2>
+                <!--Buttons leading to the map of the page, right below, and the list of places, under that section-->
+                <div class="see-more">
+                    <a href="#second-part">See Map</a>
+                    <a href="#list">See List</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Moving Section-->
+            <!--This section is an "animated" section of the page, made of three facts in 'p' elements, constantly moving across the screen-->
+        <section id="moving" class="moving-section"> 
+            <h2>Did You Know?</h2>
+            <div class="scrolling-text">
+                <p> Thessaloniki is known for its lively nightlife, with a mix of bars, clubs, and underground venues catering to all music tastes</p>
+                <p>Clubs like Vogatsikou 3 and Warehouse host international DJs and attract both locals and tourists.</p>
+                <p>Clubs in Thessaloniki stay open until the early morning, with many people starting their night at cafes before heading to the clubs.</p>
+            </div>
+        </section>
+
+        <!--Second Content-->
+            <!--This section includes an introductory sentence to the part, and a container with the interactive map-->
+        <div id="second-part" class="contenttwo">
+            <h2 class="under-heading">Experience Thessaloniki’s Vibrant Nights</h2>
+            <p>Use the map below to explore some of the top bars/clubs in Thessaloniki. Click on a location to learn more about each café’s unique atmosphere, offerings, and what makes it a great spot for your next coffee break. Whether you're after a traditional Greek coffee or a trendy espresso, you'll find the perfect place to enjoy your day.</p>
+        </div>
+
+        <!--Map Container-->
+            <!--Includes the Map along with styling-->
+        <div id="containerMap">
+            <!--Map-->
+            <div id="map" style="width: 75%; height: 500px;"></div> 
+        </div>
+
+        <!--List Section-->
+            <!--This section includes an introductory sentence to the part, a scroll menu and list of all the Bars, and then the same for the Clubs-->
+        <div id="list" class="contenttwo">
+            <h2 class="under-heading">A Curated List of Thessaloniki’s Best Bars and Clubs and Their Stories</h2>
+            <p>Explore some of Thessaloniki’s top bars and clubs in the list below. Each entry highlights a venue’s unique atmosphere, signature drinks, and what makes it an unforgettable destination for your next night out. Whether you're in the mood for a cozy cocktail bar, a high-energy dance floor, or a hidden gem with character, Thessaloniki offers the perfect spot to make your evening extraordinary.</p>
+        </div>
+
+        <div id="backgrounded-section">
+
+            <!--Scroll Menu - Bars-->
+            <!--It's made of many bars' names linked to all the id's I have added to each bar, to lead to each one after clicking on them-->
+            <h2 id="h-name">Bars</h2>
+            <div id="bars" class="scrollmenu">
+                <a href="#coq">Le Coq Tail Mix Bar</a>
+                <a href="#wonderwall">Wonderwall Fun Bar</a>
+                <a href="#dentro">Dentro Sto Bar</a>
+                <a href="#hoppy">The Hoppy Pub</a>
+                <a href="#kafodeio">Kafodeio Elliniko</a>
+                <a href="#pulp">The Pulp Bar</a>
+                <a href="#rehab">Rehab Pub</a>
+                <a href="#doze">La Doze Bar</a>
+                <a href="#gorilas">Gorilas</a>
+                <a href="#clubs">Jump To Clubs Section</a>
+            </div>
+            
+            <!-- Bar List -->
+            <div id="section-bar">
+                
+                <a href="https://maps.app.goo.gl/4oGmXxvxrwkhsyy67" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-bar" id="coq">
+                        <h2>Le Coq Tail Mix Bar</h2>
+                        <p>Renowned for its exceptional cocktails and panoramic city views from the terrace.</p>
+                        <div class="info-bar">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>6:00 PM - 2:00 AM</p>
+                            <p class="recommendation">Try their signature gin-based cocktails.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/le-coq-tail-mix-bar-image.jpg" alt="Le Coq Tail Mix Bar - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/9j13Ud3QpS2tG7GB9" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-bar" id="wonderwall">
+                        <h2>Wonderwall Fun Bar</h2>
+                        <p>A lively atmosphere paired with a rooftop view and well-crafted cocktails makes it a vibrant hotspot.</p>
+                        <div class="info-bar">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>7:00 PM - 3:00 AM</p>
+                            <p class="recommendation">Enjoy the rooftop view with a classic mojito.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/wonderwall-image.jpg" alt="Wonderwall Fun Bar - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/zNkBsbPmNpqVjH476" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-bar" id="dentro">
+                        <h2>Dentro Sto Bar</h2>
+                        <p>Known for its excellent drinks, energetic music, and cozy ambiance, it’s a local favorite.</p>
+                        <div class="info-bar">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>8:00 PM - 2:30 AM</p>
+                            <p class="recommendation">Don’t miss the themed music nights.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/dentrostobar-image.jpg" alt="Dentro Sto Bar - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/xeD6XGtHEoQioKg97" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-bar" id="hoppy">
+                        <h2>The Hoppy Pub</h2>
+                        <p>A haven for beer enthusiasts, offering an extensive selection of craft beers in a relaxed and cozy setting.</p>
+                        <div class="info-bar">
+                            <h3>Rating</h3><p>5.0/5</p>
+                            <h3>Working Hours</h3><p>5:00 PM - 1:00 AM</p>
+                            <p class="recommendation">Explore their craft beer tasting menu.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/the-hoppy-pub-image.jpg" alt="The Hoppy Pub - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/4qvJFRis2LRJvjT86" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-bar" id="kafodeio">
+                        <h2>Kafodeio Elliniko</h2>
+                        <p>This traditional bar offers a warm atmosphere, a variety of drinks, and live music performances.</p>
+                        <div class="info-bar">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>6:00 PM - 2:00 AM</p>
+                            <p class="recommendation">Perfect for an evening of live Greek music.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/kafodeio-image.jpg" alt="Kafodeio Elliniko - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/JHtuGFagXBzsxiBr7" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-bar" id="pulp">
+                        <h2>The Pulp Bar</h2>
+                        <p>Known for its eclectic decor and extensive drink menu, it provides a distinctive nightlife experience.</p>
+                        <div class="info-bar">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>8:00 PM - 3:00 AM</p>
+                            <p class="recommendation">Pair a cocktail with a side of their signature bar snacks.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/pulp-image.jpg" alt="The Pulp Bar - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/69n2zDZHAWMDpy6x8" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-bar" id="rehab">
+                        <h2>Rehab Pub</h2>
+                        <p>Features a vibrant atmosphere, diverse music selection, and a wide range of beverages.</p>
+                        <div class="info-bar">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>7:00 PM - 3:00 AM</p>
+                            <p class="recommendation">Their happy hour deals are a must-try.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/rehab-pub-image.jpg" alt="Rehab Pub - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/uphJkVqMQcPXuZHm9" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-bar" id="doze">
+                        <h2>La Doze Bar</h2>
+                        <p>A stylish venue offering creative cocktails and eclectic music, perfect for a trendy night out.</p>
+                        <div class="info-bar">
+                            <h3>Rating</h3><p>5.0/5</p>
+                            <h3>Working Hours</h3><p>9:00 PM - 3:30 AM</p>
+                            <p class="recommendation">Enjoy a craft cocktail while soaking in the music.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/la-doze-image.jpg" alt="La Doze Bar - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/JBfGS819HGmqmEiS7" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-bar" id="gorilas">
+                        <h2>Gorilas</h2>
+                        <p>Serves world-class drinks in a trendy setting, attracting locals and visitors alike.</p>
+                        <div class="info-bar">
+                            <h3>Rating</h3><p>5.0/5</p>
+                            <h3>Working Hours</h3><p>8:00 PM - 2:00 AM</p>
+                            <p class="recommendation">Their innovative cocktails are worth the splurge.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/gorilas-image.jpg" alt="Gorilas - Picture"></div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Buttons that take you to the seen-before parts of this page -->
+            <div id="second-see-more1" class="see-more">
+                <a href="#second-part">Go Back To Map</a>
+                <a href="#list">Go Back To List</a>
+            </div>
+            
+            <!--Scroll Menu - Clubs-->
+            <!--It's made of many clubs' names linked to all the id's I have added to each club, to lead to each one after clicking on them-->
+            <h2 id="h-name" >Clubs</h2>
+            <div id="clubs" class="scrollmenutwo">
+                <a href="#partytura">Partytura</a>
+                <a href="#tango">Tango bar</a>
+                <a href="#casper">Casper at Verykoko</a>
+                <a href="#nhaos">Nhaos Nightclub</a>
+                <a href="#eightball">Eightball Club</a>
+                <a href="#malt">Malt n' Jazz</a>
+                <a href="#bars">Jump To Bars Section</Section></a>
+            </div>
+
+            <!--Club List-->
+            <div id="section-club">
+                
+                <a href="https://maps.app.goo.gl/L4HkbsikLEbMkfPe8" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-club" id="partytura"> 
+                        <h2>Partytura</h2>
+                        <p>A dance club known for its energetic atmosphere and lively music, ideal for party lovers.</p>
+                        <div class="info-club">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>11:00 PM - 5:00 AM</p>
+                            <p class="recommendation">Check their calendar for themed party nights.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/partytura-image.jpg" alt="Partytura - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/HcRf3fmXrQ7v4n8A9" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-club" id="tango"> 
+                        <h2>Tango bar</h2>
+                        <p>Offers a warm and comfortable atmosphere with excellent music, making it a great spot for dancing.</p>
+                        <div class="info-club">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>10:00 PM - 4:00 AM</p>
+                            <p class="recommendation">Great for a mid-week dance break.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/tango-bar-image.jpg" alt="Tango Bar - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/zhJUmBYXeMZZKqQz8" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-club" id="casper"> 
+                        <h2>Casper at Verykoko</h2>
+                        <p>Known for its great music and lively vibe, it ensures hours of dancing and fun.</p>
+                        <div class="info-club">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>10:30 PM - 5:00 AM</p>
+                            <p class="recommendation">Don’t miss their DJ nights.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/casper-image.jpg" alt="Casper at Verykoko - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/LFWZtqAL3F2Uwf8YA" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-club" id="nhaos"> 
+                        <h2>Nhaos Nightclub</h2>
+                        <p>Offers a vibrant nightlife experience with good music, excellent staff, and reasonable prices.</p>
+                        <div class="info-club">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>11:00 PM - 6:00 AM</p>
+                            <p class="recommendation">Go early to avoid the crowd.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/nhaos-image.jpg" alt="Nhaos Nightclub - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/7stURDH65yEtmRP86" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-club" id="eightball"> 
+                        <h2>Eightball Club</h2>
+                        <p>A popular venue hosting diverse music events and parties, loved by the younger crowd.</p>
+                        <div class="info-club">
+                            <h3>Rating</h3><p>5.0/5</p>
+                            <h3>Working Hours</h3><p>11:00 PM - 6:00 AM</p>
+                            <p class="recommendation">Best for live band performances.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/eightball-image.jpg" alt="Eightball Club - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/iAgPoh2k4msaEQVx5" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-club" id="malt"> 
+                        <h2>Malt n' Jazz</h2>
+                        <p>Combines live music with a club atmosphere, offering a unique nightlife experience.</p>
+                        <div class="info-club">
+                            <h3>Rating</h3><p>5.0/5</p>
+                            <h3>Working Hours</h3><p>9:00 PM - 2:00 AM</p>
+                            <p class="recommendation">Pair the jazz vibe with their whisky specials.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/malt-n-jazz-bar-image.jpg" alt="Malt n' Jazz - Picture"></div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Buttons that take you to the seen-before parts of this page -->
+            <div id="second-see-more" class="see-more">
+                <a href="#second-part">Go Back To Map</a>
+                <a href="#list">Go Back To List</a>
+            </div>
+        </div>
+
+        <!--Footer made by Chrysoula Arampatzi-->
+        <footer class="footer">
+            <div class="footer-container">
+                <a href="../../index.html" class="logo-link">
+                <div class="logo">
+                    <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+                    <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+                </div>
+                </a>
+                <nav>
+                    <ul class="footer-nav">
+                        <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="../Iva/entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Iva/cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="../Iva/culture.html">Culture</a></li>
+                                <li><a href="../Iva/events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        </footer>
+
+    </body>
+</html>

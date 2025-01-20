@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!-- Developed by: Iva Doycheva  -->
+<html>
+
+<head>
+    <title>Thessaloniki Survival Guide</title>
+    <link rel="icon" type="image/x-icon" href="../../images/ribbon-bow.png">
+        <!--icon at the top of screen-->
+    <link rel="stylesheet" href="../../other (css & js)/Iva/cinemas-theatres.css">
+    <script defer src="../../other (css & js)/Iva/entertainment-script.js"> </script>
+</head>
+
+<body>
+    <!--A button element that brings you back to the main page of the entertainment section.-->
+    <a href="entertainment-main.html"><button class="back">Back</button></a>
+    <!--A button element that is triggered "on click" and brings you back to the top of the page. It is linked to javascript code-->
+    <button onclick="toTop()" class="top">Back to top</button>
+        
+    <!-- Header developed by Chrysa Arampatzi -->
+        <header class="header">
+            <div class="header-container">
+                <a href="../../index.html" class="logo-link">
+                <div class="logo">
+                    <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+                    <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+                </div>
+                </a>
+                <nav>
+                    <ul class="header-nav">
+                        <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="culture.html">Culture</a></li>
+                                <li><a href="events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Leandra/krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Leandra/krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="../Leandra/krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- title section of the subpage- includes just text and has a css background image-->
+        
+        <section class="title hidden">
+            <h1>PERFORMING AND
+                <br>VISUAL ARTS
+            </h1>
+
+        </section>
+        <!--This section has two buttons that lead you to the two main subsections of the page - info about the cinemas and infor about the theatres-->
+        <div class="section hidden">
+            <a href="#cinemas">
+                <button class="choose">CINEMA</button>
+            </a>
+            <a href="#theatres">
+                <button class="choose">THEATRE</button>
+            </a>
+        </div>
+
+        <!-- A section with two images with pure design purposes- they don't do anything-->
+        <section class="cinemas-info hidden">
+            <div style="flex: 1;" class="cinemas-info-img">
+                <img src="../../images/movie-camera2.jpg" alt="Image of a movie movie-camera ">
+            </div>  
+            <div style="flex: 1;" class="cinemas-info-img">
+                <img src="../../images/mask.jpg" alt="Image of a mask">
+            </div>   
+        </section>
+        <!--A div with a quote that indicates the beginning of the cinemas section-->
+        <div id="cinemas" class="section hidden">
+            <p>FIND YOUR OWN CINEMATIC EXPERIENCE</p>
+        </div>
+        <!--Cinemas section that includes information, pictures and links to four cinemas in Thessaloniki-->
+        <section class="cinemas hidden">
+            <div class="item-row hidden">
+            <div class="item-one">
+                <div class="item-one-info">
+                <h3>Olympion Cinema</h3>
+                <p>Located in Aristotelous Square, Olympion Cinema is an iconic venue that hosts the Thessaloniki International Film Festival and offers a range of classic and contemporary films.</p>
+                <!--This div includes two images that are buttons that link to external websites- the location of the cinema + the website (if one) of the cinema-->
+                <div class="links">
+                <a  target="_blank" href="https://www.google.com/maps/place/%CE%9F%CE%BB%CF%8D%CE%BC%CF%80%CE%B9%CE%BF%CE%BD+%CE%A0%CE%B1%CF%85%CE%BB%CE%BF%CF%82+%CE%96%CE%B1%CE%BD%CE%BD%CE%B1%CF%82/@40.6326951,22.9415539,54m/data=!3m1!1e3!4m15!1m8!3m7!1s0x14a839062a534af1:0x43ed20fcf8f644b8!2sAristotelous+Sq+10,+Thessaloniki+546+23,+Greece!3b1!8m2!3d40.6326735!4d22.9417656!16s%2Fg%2F11cncd0w8k!3m5!1s0x14a8395be4d18123:0x8c9ba170ea7668d6!8m2!3d40.6328705!4d22.9416438!16s%2Fg%2F11v74ccfg6?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                    <button>
+                    <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                    </button>
+                </a>
+                <a  target="_blank" href="https://www.filmfestival.gr/el/">
+                    <button>
+                    <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                    </button>
+                </a>
+                </div>
+                </div>
+                <div class="item-one-img">
+                    <img src="../../images/olympion-cinema.jpg" alt="Image of Olympion Cinema">
+                </div>
+            </div>
+
+            <div class="item-two">
+                
+                <div class="item-two-info">
+                <h3>Cineplexx Thessaloniki</h3>
+                <p>A modern multiplex cinema offering the latest blockbusters, 3D screenings, and comfortable seating, located in the Mediterranean Cosmos shopping mall.</p>
+                <div class="links">
+                <a  target="_blank"  href="https://www.google.com/maps/place/Cineplexx+One+Salonica/@40.646355,22.9208269,745m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a8399bce7174e3:0xebb8b3594eb41474!8m2!3d40.646355!4d22.9208269!16s%2Fg%2F11b8twqhm3?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                    <button>
+                    <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                    </button>
+                </a>
+                <a  target="_blank"  href="https://www.cineplexx.gr/film?date=2024-12-27&category=now&location=all">
+                    <button>
+                    <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                    </button>
+                </a>
+                </div>
+                </div>
+                <div class="item-two-img">
+                    <img src="../../images/cineplexx.jpg" alt="Image of Cineplexx Cinema">
+                </div>
+            </div>
+            </div>
+
+               <div class="item-row hidden">
+            <div class="item-one">
+                <div class="item-one-info">
+                <h3>Village Cinemas</h3>
+                <p>Known for its state-of-the-art technology and immersive experience, Village Cinemas offers a wide selection of international and Greek films.</p>
+                <div class="links">
+                <a  target="_blank"  href="https://www.google.co.in/maps/place/Village+Cinemas+@+Mediterranean+Cosmos/@40.5561257,22.9893785,17z/data=!3m2!4b1!5s0x14a83f7b12b1cfd5:0x95fb9b5b85693628!4m6!3m5!1s0x14a83f7b204c4d3b:0xdea4b48a5748bed8!8m2!3d40.5561217!4d22.9919534!16s%2Fg%2F11bzt1pbhq?entry=ttu">
+                    <button>
+                    <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                    </button>
+                </a>
+                <a  target="_blank"  href="https://www.villagecinemas.gr/">
+                    <button>
+                    <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                    </button>
+                </a>
+                </div>
+                </div>
+                <div class="item-one-img">
+                    <img style="width: 300px; height: auto;" src="../../images/village.jpg" alt="Image of Village Cinemas">
+                </div>
+            </div>
+
+            <div class="item-two">
+                
+                <div class="item-two-info">
+                <h3>Apollon Cinema</h3>
+                <p>A historic cinema in the heart of Thessaloniki, Apollon Cinema offers a mix of mainstream and arthouse films in a nostalgic setting.</p>
+                <div class="links">
+                <a  target="_blank"  href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x14a838e268b6b979:0x78e2e965b96d7694?sa=X&ved=1t:8290&ictx=111">
+                    <button>
+                    <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                    </button>
+                </a>
+                <a  target="_blank"  href="https://www.facebook.com/TherinoApollon/?locale=el_GR">
+                    <button>
+                    <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                    </button>
+                </a>
+                </div>
+                </div>
+                <div class="item-two-img">
+                    <img src="../../images/apollon.jpg" alt="Image of Apollon Cinema">
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--A div with a quote that indicates the beginning of the theaters section-->
+        <div id = "theatres" class="section hidden">
+            <p>EXPERIENCE THE MAGIC OF LIVE PERFORMANCES</p>
+        </div>
+        <!-- Theatres section of the page, that is mostly the same as the cinemas section but is here for semantic purposes-->
+        <section class="cinemas hidden">
+            <div class="item-row hidden">
+            <div class="item-one">
+                <div class="item-one-info">
+                <h3>National Theatre of Northern Greece</h3>
+                <p>One of the largest and most prestigious theaters in Greece, offering a wide range of performances including classical plays, contemporary dramas, and musicals.</p>
+                <div class="links">
+                <a  target="_blank"  href="https://www.google.com/maps/place/Theatre+of+the+Society+for+Macedonian+Studies/@40.6266055,22.9469588,745m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a83903a0d9926b:0xfd4529191156cc1e!8m2!3d40.6266015!4d22.9495337!16s%2Fg%2F1262dj5bp?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                    <button>
+                    <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                    </button>
+                </a>
+                <a  target="_blank"  href="https://www.ntng.gr/?lang=el-GR&page=1">
+                    <button>
+                    <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                    </button>
+                </a>
+                </div>
+                </div>
+                <div class="item-one-img">
+                    <img src="../../images/national-theatre.JPG" alt="Image of the National Theater">
+                </div>
+            </div>
+
+            <div class="item-two">
+                
+                <div class="item-two-info">
+                <h3>Royal Theatre</h3>
+                <p>A historic venue known for its stunning architecture and diverse programming, featuring everything from Greek tragedies to modern performances.</p>
+                <div class="links">
+                <a  target="_blank"  href="https://www.google.com/maps/place/Royal+Theatre+of+Thessaloniki/@40.6251261,22.9468993,745m/data=!3m3!1e3!4b1!5s0x14a839033de55403:0xfd7b51d51ee66a13!4m6!3m5!1s0x14a839033dbb9a85:0x170cd7bd4bbc6eed!8m2!3d40.6251221!4d22.9494742!16s%2Fg%2F11bwcrk1gx?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                    <button>
+                    <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                    </button>
+                </a>
+                <a   target="_blank" href="https://www.ntng.gr/default.aspx?lang=el-GR&page=10">
+                    <button>
+                    <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                    </button>
+                </a>
+                </div>
+                </div>
+                <div class="item-two-img">
+                    <img src="../../images/royal-theatre.jpg" alt="Image of the Royal Theater">
+                </div>
+            </div>
+            </div>
+
+               <div class="item-row hidden">
+            <div class="item-one">
+                <div class="item-one-info">
+                <h3>Avlaia Theatre</h3>
+                <p>A smaller, intimate theater that focuses on experimental and avant-garde productions, providing a platform for emerging artists.</p>
+                <div class="links">
+                <a   target="_blank" href=" https://www.google.com/maps/place/Avlaia+Theater/@40.6268475,22.9494652,745m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a8393d7c6e9617:0x77d8ba686bf150eb!8m2!3d40.6268435!4d22.9520401!16s%2Fg%2F11g4cy1nz8?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                    <button>
+                    <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                    </button>
+                </a>
+                <a  target="_blank"  href="https://avlaiatheater.gr/">
+                    <button>
+                    <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                    </button>
+                </a>
+                </div>
+                </div>
+                <div class="item-one-img">
+                    <img style="width: 300px; height: auto;" src="../../images/avlaia-theatre.jpg" alt="Image of Avlaia Theater">
+                </div>
+            </div>
+
+            <div class="item-two">
+                
+                <div class="item-two-info">
+                <h3>Theatre of the Earth</h3>
+                <p>An open-air theater offering a unique experience with performances ranging from classical Greek drama to contemporary plays, all set against the backdrop of nature.</p>
+                <div class="links">
+                <a  target="_blank"  href="https://www.google.com/maps/place/Theatro+Gis/@40.6277415,22.9701412,745m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a838f5ea555555:0x72cc2b13c21b1443!8m2!3d40.6277375!4d22.9727161!16s%2Fg%2F11bw_5l4hg?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                    <button>
+                    <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                    </button>
+                </a>
+                <a  target="_blank"  href="https://www.ntng.gr/default.aspx?lang=el-GR&page=14">
+                    <button>
+                    <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                    </button>
+                </a>
+                </div>
+                </div>
+                <div class="item-two-img">
+                    <img src="../../images/Theatre-Earth.jpg" alt="Image of Theater of the Earth">
+                </div>
+            </div>
+            </div>
+        </section>
+    
+    <!-- Footer developed by Chrysa Arampatzi -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="../../index.html" class="logo-link">
+            <div class="logo">
+                <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+                <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+            </div>
+            </a>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="culture.html">Culture</a></li>
+                                <li><a href="events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Leandra/krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Leandra/krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="../Leandra/krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- Developed by: Iva Doycheva  -->
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../other (css & js)/Iva/entertainment-main.css">
+    <title>Thessaloniki Survival Guide</title>
+    <link rel="icon" type="image/x-icon" href="../../images/ribbon-bow.png">
+        <!--icon at the top of screen-->
+    <script defer src="../../other (css & js)/Iva/entertainment-script.js"> </script>
+
+</head>
+
+<body>
+    <!--A button element that is triggered "on click" and brings you back to the top of the page. It is linked to javascript code-->
+    <button onclick="toTop()" class="top">Back to top</button>
+    
+    
+    <!-- Header developed by Chrysa Arampatzi -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../../index.html" class="logo-link">
+            <div class="logo">
+                <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+                <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+            </div>
+            </a>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="culture.html">Culture</a></li>
+                                <li><a href="events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Leandra/krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Leandra/krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="../Leandra/krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+ <!-- Second section of the page, it has the main information abput the page. It is again split into div sections, for easier positioning and manipulation with css -->
+    <section class="info-container hidden">
+        <div class="text-container hidden">
+            <h2>
+                WELCOME TO THESSALONIKI ENTERTAINMENT HUB!
+            </h2>
+            <p>
+                Discover the heartbeat of this vibrant city through its rich tapestry of cinemas, museums, galleries,
+                and
+                electrifying events. Whether you're a film buff, an art lover, a history enthusiast, or a music fanatic,
+                our guide brings you the best our city has to offer. Dive into a world of endless excitement, from the
+                latest blockbuster movies and thought-provoking exhibitions to thrilling concerts and family-friendly
+                activities. Stay in the know and never miss a beat - your adventure in Thessaloniki starts here!
+            </p>
+        </div>
+            <!-- this button scrolls to the next section of the page, it is linked with an id so that it leads to a section of the same page-->
+        <div class="info-button hidden">    
+            <a href="#perf"><button class="round-button">Discover more</button></a>
+        </div>
+    </section>
+
+    <!--Sections for every subpage of the entertainment page, the buttons will lead to each subpage-->
+    <!-- First section is for the performing arts, it has two main div containers that hold the text and the buttons that lead to each subsection of the performing arts subpage (cinemas-theatres.html).-->
+    <section id="perf" class="perf-arts hidden">
+        <div class="perf-text hidden">
+            <h2>
+                PERFORMING AND VISUAL ARTS
+            </h2>
+        </div>
+        <div class="perf-buttons hidden">
+            <!--There are sub-divs in the second div for easier manipulation of position with flexbox in css as well as styling-->
+        <div class="cinema-button">
+            <!-- Made the buttons be images-->
+            <!--The buttons are linked with the subpage as well as an id of that subpage so it leads directly to the particular section of the subpage-->
+            <a  class= "cinema" href="cinemas-theatres.html#cinemas">
+                <button>
+                    <img src="../../images/cinema.jpg" alt="An image of a cinema theatre">
+                </button>
+            </a>
+        </div>
+        <div class="theatre-button">    
+        <a class="theatre" style="margin-right:50px;" href="cinemas-theatres.html#theatres">
+                <button>
+                    <img src="../../images/theatre.jpg" alt="Am image of a theater hall">
+                </button>
+            </a>
+        </div>
+        </div>
+    </section>
+    <!-- The second section is for access to the culture.html subpage. It consists of three div containers- for the title, for information for each subsection in the subpage and for a button-->
+    <section class="culture-container hidden">
+        <div class="culture hidden">
+        <h2>CULTURE</h2>
+        </div>
+        <div class="culture-info hidden">
+            <!--There are two sub-div containers that each is split with another two div-subcontainers(text and image)- this is mostly for easier manipulation of position with css but also for styling purposes-->
+        <div class="museums">
+            <div class="museum-img">
+            <img style="height: 400px;" src="../../images/museum.jpg" alt="An image of a museum">
+            </div>
+            <div>
+                <p>
+                    <b>Explore Thessaloniki's rich history </b>
+                    <br>and vibrant heritage through its top <br>museums, featuring ancient
+                    artifacts,<br> Byzantine relics, and unique <br>exhibitions.
+                </p>
+            </div>
+        </div>
+
+        <div class="galleries">
+            <div class="gallery-img">
+            <img style="height: 400px;" src="../../images/gallery.jpg" alt="An image of an art gallery">
+            </div>
+            <div>
+                <p>
+                    <b>Experience Thessaloniki's Creative Pulse</b>
+                    <br>Discover the vibrant world of Thessaloniki's <br>art galleries, showcasing contemporary<br>
+                    works, local talent, and inspiring <br>exhibitions.
+                </p>
+            </div>
+        </div>
+        </div>
+        <!-- one button that leads to the culture subpage-->
+        <div class="culture-button hidden">
+        <a href="culture.html"><button class="round-button">Discover more</button></a>
+        </div>
+    </section>
+    <!-- Last section is for events and festivals. It has two main div containers inside- for the title and for the buttons-->
+    <section class="events hidden">
+        <div>
+            <div class="events-text hidden">
+                <h2>DON'T MISS OUT</h2>
+                <p>all annual events in Thessaloniki</p>
+            </div>
+
+            <div class="events-buttons hidden">
+                <!--The buttons are split into two seperate div containers for easier manipulation of position with css-->
+               <div class="btn-festivals">
+                <a href="events-festivals.html#festivals"> <button class="round-button">Festivals</button></a>
+               </div>
+               <div class="btn-events">
+                <a href="events-festivals.html#events"> <button class="round-button">Events</button></a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer developed by Chrysa Arampatzi -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="../../index.html" class="logo-link">
+            <div class="logo">
+                <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+                <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+            </div>
+            </a>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="culture.html">Culture</a></li>
+                                <li><a href="events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Leandra/krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Leandra/krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="../Leandra/krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+/* CSS page: City Life - Main page by Leandra Krasniqi */
+/* Header and Footer CSS made by Chrysoula Arampatzi */
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap'); 
+/*geist font*/
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap'); 
+/*geist mono font*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Geist', sans-serif;
+}
+
+/*Overall HTML styling*/
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px; 
+    /* No space around the body*/
+    background-color: white;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+/* Header made by Chrysoula Arampatzi*/
+.header {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    width: 100vw;
+    position: absolute;
+    margin-bottom: 500px;
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 6px;
+}
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: block;
+}
+.site-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.header-nav{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+.header-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.header-nav .dropdown {
+    position: relative;
+}
+
+.header-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 55;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.header-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.parts {
+    display:grid;
+    grid-template-columns: 1fr 1fr; 
+    /* Two equal columns*/
+    gap: 20px; 
+    /* Space between contents */
+    align-items: center;
+    padding:40px;
+    background: url(../../images/white-tower-thessaloniki-with-clouds-greece.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(236, 229, 229, 0.686);
+    /* This adds shading layer on top of the image */
+    padding-top: 220px;
+    /* Padding to make content further from header*/
+}
+
+/* Text Contents of the section*/
+.heading{
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.under-heading {
+    font-size: 1.3rem;
+    color:#464343;
+    margin-bottom: 15px;
+}
+
+.content {
+    text-align: left;
+    
+}
+
+.content p{
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    
+} 
+
+/* See More Button*/
+.see-more a {
+    display: inline-block; 
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 20px;
+    text-decoration: none;
+    border: 2px solid #bbbbbb;
+    padding: 18px;
+    color: #333;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.see-more a:hover{
+    color:#464343;
+    transform: translateY(-4px);
+}
+
+.see-more a:active{
+    color: #333;
+    transform: translateY(0px);
+}
+
+/* Buttons */
+.buttons {
+    display: flex; 
+    justify-content:center; 
+    gap: 20px; 
+    /* Between the buttons */
+    margin-top: 20px; 
+    z-index: 1;
+}
+
+button {
+    border: none; 
+    /* Removing the default border */
+    padding: 15px 30px; 
+    font-size: 1.2rem; 
+    font-weight: 600;
+    text-transform: uppercase; 
+    border-radius: 50px; 
+    /* Rounded corners */
+    cursor: pointer; 
+    /* A pointer cursor when it's on hover*/
+    transition: all 0.3s ease; 
+    /* A transition for hover effects */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); 
+    /* Light shadow-depth*/
+}
+
+button.daytime {
+    background-color: white;
+    color: #0d1345; 
+}
+
+button.daytime:hover {
+    background-color: #f0f0f0; 
+    color: #0d1345;
+    transform: translateY(-4px); 
+    /* Slight lift effect (transformation) */
+}
+
+button.daytime:active {
+    transform: translateY(0px); 
+    /* Reset to normal button*/
+}
+
+button.nightlife {
+    background-color: #0d1345; 
+    color: white;
+}
+
+button.nightlife:hover {
+    background-color: #bfbfdb; 
+    color: #0d1345;
+    transform: translateY(-4px); 
+}
+
+button.nightlife:active {
+    transform: translateY(0px); 
+}
+
+/* Moving Section */
+.moving-section {
+    background-color: #bfbfdb;
+    text-align: center;
+    padding: 10px 0; 
+    /* Vertical spacing on top and bottom*/
+    overflow: hidden; 
+    /* Keep the moving content within bounds. The content outside visible containers hidden */
+    position: relative; 
+    /* This allows to add more content without disrupting the flow */
+}
+.moving-section h2 {
+    margin-bottom: 10px; 
+    /* To be away from the animated section */
+    font-size: 1.4rem;
+    color: #473b61;
+}
+.scrolling-text {
+    display: flex; 
+    /* Aligns 'p' elements horizontally */
+    gap: 50px; 
+    /* Creates gap between text, to know when sections change*/
+    animation: scroll-left 30s linear /* constant speed of movement */ infinite 
+}
+
+.scrolling-text p {
+    white-space: nowrap; 
+    /* No wrapping of text in multiple lines*/
+    font-size: 1.2rem;
+    color:#594b77;
+    font-family: 'Geist Mono', monospace;
+}
+
+@keyframes scroll-left{ /* Defines animation for moving text */
+    0% {
+        transform: translateX(100%); /* This transform moves text container completely to the right (100% of the right)*/
+    }
+    100% {
+        transform: translateX(-100%); /*Then moves the text container completely to the left (100% of the left)*/
+    }
+}
+
+/* Second Section */
+.partstwo {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    gap: 20px; 
+    align-items: center; 
+    padding: 10px;
+    margin: 10px;
+    margin-top: 42px;
+
+}
+
+.contenttwo {
+    text-align: center; 
+}
+
+.contenttwo p{
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.image {
+    width: 100%;
+    height: auto; 
+}
+
+#empty { 
+    /* The empty div has the same background as the intro, to give the illusion that it's a continuous image*/
+    padding: 100px;
+    background: url(../../images/white-tower-thessaloniki-with-clouds-greece.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(236, 229, 229, 0.686);
+    /* This adds shading layer on top of the image */
+}
+
+/* Footer CSS made by Chrysoula Arampatzi */
+.footer {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    padding-top:100px ;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 5;
+    margin-top: -70px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+
+.footer-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.footer-nav .dropdown {
+    position: relative;
+}
+
+.footer-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 150;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: bottom center;
+}
+
+.footer-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 150;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.footer-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}

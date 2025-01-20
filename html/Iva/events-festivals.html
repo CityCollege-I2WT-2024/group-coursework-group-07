@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!-- Developed by: Iva Doycheva  -->
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../other (css & js)/Iva/events-festivals.css">
+    <title>Thessaloniki Survival Guide</title>
+    <link rel="icon" type="image/x-icon" href="../../images/ribbon-bow.png">
+        <!--icon at the top of screen-->
+    <script defer src="../../other (css & js)/Iva/entertainment-script.js"> </script>
+
+</head>
+
+<body>
+    <!--A button element that brings you back to the main page of the entertainment section.-->
+    <a href="entertainment-main.html"><button class="back">Back</button></a>
+    <!--A button element that is triggered "on click" and brings you back to the top of the page. It is linked to javascript code-->
+    <button onclick="toTop()" class="top">Back to top</button>
+    
+    <!-- Header developed by Chrysa Arampatzi -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../../index.html" class="logo-link">
+            <div class="logo">
+                <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+                <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+            </div>
+            </a>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="culture.html">Culture</a></li>
+                                <li><a href="events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Leandra/krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Leandra/krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="../Leandra/krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+        </nav>
+<!--Section that contains all the subsections of the page-->
+<section class="events-festivals">
+    <!--Title section that contains text-->
+        <section class="title hidden">
+            <h1>Events and Festivals</h1>
+            <p>don't miss out in Thessaloniki</p>
+        </section>
+        <!--Section that contains buttons, information and images for each of the two main subsections of the website - events and festivals. Each button brings you to the corresponding section of the page-->
+        <section class="choice hidden">
+            <div class="events hidden">
+                <div class="choice-img">
+                    <img src="../../images/event.jpg" alt="Image of two glasses">
+                </div>
+                <div class="choice-text">
+                    <p>
+                        Thessaloniki hosts a variety of vibrant annual events that celebrate its rich culture and history. Enjoy lively street fairs, food festivals, and traditional celebrations that showcase the city's dynamic spirit and offer unique experiences for everyone.
+                    </p>
+                </div>
+                <div class="choice-button">
+                    <a  href="#events">
+                        <button>
+                            Events
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="festivals hidden">
+                <div class="choice-img">
+                    <img src="../../images/festival.jpg" alt="Image of people at a festival">
+                </div>
+                <div class="choice-text">
+                    <p>
+                        From the electrifying Reworks Festival for electronic music fans to the culturally rich Street Mode Festival, there’s something for everyone. These festivals offer unforgettable experiences that highlight the vibrant spirit of the city.
+                    </p>
+                </div>
+                <div class="choice-button">
+                    <a  href="#festivals">
+                        <button>
+                            Festivals
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--First main subsection of the page that contains all the information about annual events in Thessaloniki-->
+        <section id="events" class="events-info hidden">
+            <div class="section hidden">
+                <p>ANNUAL EVENTS</p>
+            </div>
+            <div class="item hidden">
+                <div class="image">
+                    <img src="../../images/internationalfair.png" alt="Image of International Fair">
+                </div>
+                <div class="item-info">
+                    <h2>
+                        Thessaloniki International Fair
+                    </h2>
+                    <p>
+                        The Thessaloniki International Fair (TIF) is one of the largest and most significant trade fairs in Greece. Held every September, TIF brings together exhibitors from a wide range of industries, including technology, agriculture, fashion, and food. The fair provides a platform for businesses to showcase their products and services, network with potential partners, and explore new market opportunities. In addition to the trade exhibitions, TIF features cultural events, concerts, and entertainment activities, making it a vibrant and dynamic event that attracts thousands of visitors each year.
+                    </p>
+                    <p><strong>Date: September</strong></p>
+                    <!--This div includes two images that are buttons that link to external websites- the location of the event + the website (if one)-->
+                    <div class="links">
+                        <a  target="_blank" href="https://www.google.com/maps/place/Thessaloniki+International+Trade+Fair-+Exhibition/@40.6277456,22.9522544,745m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a838fe0b25f42b:0x9161c0e8e4018ebd!8m2!3d40.6277416!4d22.9548293!16s%2Fg%2F1263d_m1m?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-purple.png">
+                            </button>
+                        </a>
+                        <a target="_blank"  href="https://helexpo.gr/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-purple.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="item hidden">
+                
+                <div class="item-info">
+                    <h2>Thessaloniki Book Fair
+                    </h2>
+                    <p>
+                        
+                        The Thessaloniki Book Fair is a prominent literary event that takes place every May. The fair gathers publishers, authors, translators, and book lovers from Greece and beyond. It features book presentations, readings, panel discussions, and workshops. The Thessaloniki Book Fair aims to promote literature and reading culture, providing a platform for literary exchange and dialogue. The fair also includes special sections for children's books, educational materials, and digital publishing, catering to a wide range of interests and audiences.
+                    </p>
+                    <p><strong>Date: May</strong></p>
+                    <div class="links">
+                        <a  target="_blank" href="https://www.google.com/maps/place/Thessaloniki+International+Trade+Fair-+Exhibition/@40.6277456,22.9522544,745m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a838fe0b25f42b:0x9161c0e8e4018ebd!8m2!3d40.6277416!4d22.9548293!16s%2Fg%2F1263d_m1m?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-purple.png">
+                            </button>
+                        </a>
+                        <a  target="_blank" href="https://www.thessalonikibookfair.gr/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-purple.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+                <div class="image-two">
+                    <img src="../../images/bookfair.jpg" alt="Image of the book fair in Thessaloniki">
+                </div>
+
+            </div>
+</section>
+<!--Second main subsection of the page that contains all the information about annual festivals. It is mostly the same as the previous one and is here for semantic reasons-->
+<section id="festivals" class="festivals-info hidden">  
+    <div class="section hidden">
+        <p>ANNUAL FESTIVALS</p>
+    </div>       
+    <div class="item hidden">
+                <div class="image">
+                    <img src="../../images/filmfestival.jpg" alt="Image of the Thessaloniki Interactive Film Festival">
+                </div>
+                <div class="item-info">
+                    <h2>
+                        Thessaloniki International Film Festival 
+                    </h2>
+                    <p>
+                        The Thessaloniki International Film Festival (TIFF) is one of the oldest and most prestigious film festivals in Southeast Europe. Each November, the festival attracts filmmakers, actors, critics, and cinema enthusiasts from around the world. TIFF showcases a diverse range of films, including feature films, documentaries, and short films. It is renowned for its international competition section, where emerging filmmakers compete for the coveted Golden Alexander Award. The festival also features masterclasses, panel discussions, and workshops, providing a comprehensive cinematic experience.
+                    </p>
+                    <p><strong>Date: November</strong></p>
+                    <div class="links">
+                        <a  target="_blank" href="https://www.google.com/maps/place/%CE%9F%CE%BB%CF%8D%CE%BC%CF%80%CE%B9%CE%BF%CE%BD+%CE%A0%CE%B1%CF%85%CE%BB%CE%BF%CF%82+%CE%96%CE%B1%CE%BD%CE%BD%CE%B1%CF%82/@40.6328959,22.9404187,220m/data=!3m1!1e3!4m10!1m2!2m1!1sOlympon+theater+thessaloniki!3m6!1s0x14a8395be4d18123:0x8c9ba170ea7668d6!8m2!3d40.6328705!4d22.9416438!15sChxPbHltcG9uIHRoZWF0ZXIgdGhlc3NhbG9uaWtpkgENbW92aWVfdGhlYXRlcuABAA!16s%2Fg%2F11v74ccfg6?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-purple.png">
+                            </button>
+                        </a>
+                        <a  target="_blank" href="https://www.filmfestival.gr/el/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-purple.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="item hidden">
+                
+                <div class="item-info">
+                    <h2>Reworks Festival
+                    </h2>
+                    <p>
+                        
+                        Reworks Festival is an acclaimed electronic music festival held in Thessaloniki every September. The festival brings together top international and local DJs, producers, and electronic music artists for a weekend of electrifying performances. Reworks is known for its innovative approach to music and its ability to blend different genres and styles. In addition to music performances, the festival features art installations, visual performances, and workshops, creating a multi-sensory experience for attendees.
+                    </p>
+                    <p><strong>Date: September</strong></p>
+                    <div class="links">
+                        <a target="_blank"  href="https://reworks.gr/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-purple.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+                <div class="image-two">
+                    <img style="height: 450px; width: auto;" src="../../images/reworks.jpeg" alt="Image of the Reworks Festival">
+                </div>
+
+            </div>
+
+            <div class="item hidden">
+                <div class="image">
+                    <img src="../../images/streetmode.jpg" alt="Imageof the Streetmode Festival">
+                </div>
+                <div class="item-info">
+                    <h2>
+                        Street Mode Festival
+                    </h2>
+                    <p>
+                        A dynamic celebration of street culture, featuring live music, street art, dance competitions, and extreme sports. Street Mode Festival transforms Thessaloniki into a hub of creativity with graffiti, BMX, skateboarding, and breakdancing performances. Interactive workshops and vibrant energy make this festival a must-attend for all ages.
+                    </p>
+                    <p><strong>Date: September</strong></p>
+                    <div class="links">
+                        <a target="_blank"  href="https://www.google.com/maps/place/Port+of+Thessaloniki/@40.6348697,22.9127445,2980m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a8390b30348339:0xcc9bc9976b0cada1!8m2!3d40.6348544!4d22.9230442!16s%2Fm%2F05c1zdc?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-purple.png">
+                            </button>
+                        </a>
+                        <a  target="_blank" href="https://www.streetmode.gr/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-purple.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+                </div>
+
+            </div>
+            <div class="item hidden">
+            <div class="item-info">
+                <h2>Thessaloniki Food Festival</h2>
+                <p>
+                    The Thessaloniki Food Festival is an annual event that celebrates the city's rich culinary heritage. Held every November, the festival features a variety of food-related activities, including cooking demonstrations, food tastings, and culinary workshops. Local and international chefs showcase their skills, and visitors can sample a wide array of dishes from traditional Greek cuisine to modern culinary creations. The Thessaloniki Food Festival is a must-visit event for food enthusiasts.
+                </p>
+                <p><strong>Date: November</strong></p>
+                <div class="links">
+                    <a target="_blank"  href="https://foodfestival.thessaloniki.gr/?lang=en">
+                        <button>
+                        <img class="website" style="height: 40px; width: auto;" src="../../images/website-purple.png">
+                        </button>
+                    </a>
+                    </div>
+            </div>
+            <div class="image-two">
+                <img src="../../images/foodfestival.jpg" alt="Image of the Food Festival in Thessaloniki">
+            </div>
+
+        </div>
+
+
+        </section>
+</section>
+<!-- Footer developed by Chrysa Arampatzi -->
+<footer class="footer">
+    <div class="footer-container">
+        <a href="../../index.html" class="logo-link">
+        <div class="logo">
+            <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+            <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+        </div>
+        </a>
+        <nav>
+            <ul class="footer-nav">
+                <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="culture.html">Culture</a></li>
+                                <li><a href="events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Leandra/krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Leandra/krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="../Leandra/krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

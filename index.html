@@ -1,15 +1,228 @@
 <!DOCTYPE html>
-<!-- Group name:
-     Group members:
+<!-- Group name: CS Girlies
+     Group members: Chrysa Arampatzi, Iva Doycheva, Aleksia Kapurani, Leandra Krasniqi, Maria Bosi.
 -->
-<!-- developed by: -->
+<!-- Developed by: Chrysa Arampatzi  -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Coursework</title>
+    <title>Thessaloniki Survival Guide</title>
+    <link rel="icon" type="image/x-icon" href="images/ribbon-bow.png">
+        <!--icon at the top of screen-->
+    <link rel="stylesheet" href="./other (css & js)/Chrysa/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap%27" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap%27" rel="stylesheet">
 </head>
 <body>
-    <p>Add your code here</p>
+    <!-- Header / Nav bar -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#top" class="logo-link">
+            <div class="logo">
+                <img src="images/LogoWhite.png" alt="Thessaloniki Logo">
+                <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+            </div>
+            </a>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="students/students.html">ABOUT US</a></li>
+                    <li class="dropdown"><a href="html/Iva/entertainment-main.html">ENTERTAINMENT</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="html/Iva/cinemas-theatres.html">Cinemas & Theaters</a></li>
+                            <li><a href="html/Iva/culture.html">Culture</a></li>
+                            <li><a href="html/Iva/events-festivals.html">Events & Festivals</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="html/Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="html/Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                            <li><a href="html/Aleksia/topplaces.html">Top Places</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="html/Leandra/krasniqi.html">CITY LIFE</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="html/Leandra/krasniqi-daytime.html">Daytime</a></li>
+                            <li><a href="html/Leandra/krasniqi-nightlife.html">Nightlife</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="html/Maria/transportation.html">TRANSPORTATION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+     <body id="top">
+    <section class="welcome-wrapper">
+        <!-- Background Layer -->
+        <div class="welcome-bg"></div>
+        
+        <!-- Static Content Layer -->
+         <div class="welcome-overlay">
+        <div class="welcome-content">
+            <h1 class="welcome-title">WELCOME TO THESSALONIKI</h1>
+            <p class="welcome-description">
+                Welcome to The Thessaloniki Survival Guide! Your ultimate resource for navigating the city
+                like a local. Explore the best entertainment, culinary delights, city life, and transportation
+                tips to make the most of your time in Thessaloniki.
+            </p>
+            <a href="#discover-section" class="welcome-btn">DISCOVER NOW </a>      
+        </div>
+         </div>
+        <div class="vertical-border-left"></div>
+        <div class="vertical-border-right"></div>
+    </section>
+    
+<!-- Discover Section -->
+    <section id="discover-section" class="discover-section">
+        <div class="discover-container">
+            <!-- Left Image -->
+            <div class="discover-image-left">
+                <video width="640px" height="600px" autoplay muted loop>
+                    <source src="images/AristotelousLeft.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+    
+            <!-- Text Content -->
+            <div class="discover-content">
+                <h2>DISCOVER THESSALONIKI</h2>
+                <p>
+                    The Thessaloniki Survival Guide is your key to unlocking the secrets of this vibrant city.
+                    Dive into the rich history, cultural diversity, and modern life of Thessaloniki with our
+                    curated guides and tips.
+                </p>
+            </div>
+    
+            <!-- Right Image -->
+            <div class="discover-image-right">
+                <img src="images/AristotelousRight.jpeg" alt="City Right View">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Explore Section -->
+    <section class="explore-section">
+        <h2 class="section-title">EXPLORE THESSALONIKI</h2>
+        <div class="explore-cards">
+            <!-- Card 1 -->
+            <div class="explore-card">
+                <img src="images/Entertainment.jpeg" alt="Entertainment" class="card-image">
+                <h3>Thessaloniki's <br> Entertainment Hub</h3>
+                <a href="html/Iva/entertainment-main.html" class="card-btn">LEARN MORE</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="explore-card">
+                <img src="images/Culinary.jpeg" alt="Culinary" class="card-image">
+                <h3>Thessaloniki's <br> Culinary Experience</h3>
+                <a href="html/Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html" class="card-btn">LEARN MORE</a>
+            </div>
+            <!-- Card 3 -->
+            <div class="explore-card">
+                <img src="images/CityLife.jpeg" alt="City Life" class="card-image">
+                <h3>Thessaloniki's <br> City Life</h3>
+                <a href="html/Leandra/krasniqi.html" class="card-btn">LEARN MORE</a>
+            </div>
+            <!-- Card 4 -->
+            <div class="explore-card">
+                <img src="images/Transportation.jpg" alt="Transportation" class="card-image">
+                <h3>Transportation in Thessaloniki</h3>
+                <a href="html/Maria/transportation.html" class="card-btn">LEARN MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <div class="testimonial-image">
+                <img src="images/People.jpg" alt="Testimonial People">
+            </div>
+            <div class="slideshow">
+                <h2 class="section-title">CITY <br> EXPLORERS' VOICES</h2>
+                <div class="slides-wrapper">
+                    <div class="slide active">
+                        <p class="testimonial-text">“The Thessaloniki Survival Guide has been an invaluable companion in my journey through the city. It's like having a local friend showing you around!”</p>
+                    </div>
+                    <div class="slide">
+                        <p class="testimonial-text">“I can't thank The Thessaloniki Survival Guide enough for making my time studying in the city so memorable. Their recommendations are spot-on!”</p>
+                    </div>
+                    <div class="slide">
+                        <p class="testimonial-text">“The city came alive for me with the help of The Thessaloniki Survival Guide. I managed to get around and discovered hidden gems and experiences that made my college years unforgettable.”</p>
+                    </div>
+                </div>
+                    <div class="dots">
+                        <span class="dot active" onclick="showSlide(0)"></span>
+                        <span class="dot" onclick="showSlide(1)"></span>
+                        <span class="dot" onclick="showSlide(2)"></span>
+                </div>
+             </div>
+        </div>
+    </section>
+    
+    
+    <!-- Questions Section -->
+    <section class="questions-section">
+        <div class="questions-box">
+            <h2>QUESTIONS? WE HAVE ANSWERS</h2>
+            <p>Got questions about navigating Thessaloniki? Check out our ABOUT US section to find about the collaborators of this website, along with our information. If you can't find what you're looking for, feel free to reach out to us!</p>
+            <a href="students/students.html" class="questions-btn">ABOUT US</a>
+        </div>
+    </section>
+
+    <!-- Decorative Umbrella Section -->
+
+    <section class="decorative-section">
+        <div class="umbrella-bg">
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#top" class="logo-link">
+            <div class="logo">
+                <img src="images/LogoWhite.png" alt="Thessaloniki Logo">
+                <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+            </div>
+            </a>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="students/students.html">ABOUT US</a></li>
+                    <li class="dropdown"><a href="html/Iva/entertainment-main.html">ENTERTAINMENT</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="html/Iva/cinemas-theatres.html">Cinemas & Theaters</a></li>
+                            <li><a href="html/Iva/culture.html">Culture</a></li>
+                            <li><a href="html/Iva/events-festivals.html">Events & Festivals</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="html/Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="html/Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                            <li><a href="html/Aleksia/topplaces.html">Top Places</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="html/Leandra/krasniqi.html">CITY LIFE</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="html/Leandra/krasniqi-daytime.html">Daytime</a></li>
+                            <li><a href="html/Leandra/krasniqi-nightlife.html">Nightlife</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="html/Maria/transportation.html">TRANSPORTATION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+    <script src="./other (css & js)/Chrysa/script.js"></script>
 </body>
 </html>
+

@@ -1,0 +1,535 @@
+/* CSS Developed by: Iva Doycheva */
+
+/*Importing fonts that are used throughout the whole website*/
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap'); 
+*{
+    box-sizing: border-box;
+    font-family: 'Geist', sans-serif;
+}
+
+/*made the scroll of the whole page smooth*/
+html{
+    scroll-behavior: smooth;
+
+}
+body {
+    margin: 0px; 
+}
+/*properties for the title container + nav bar*/
+
+/* Header developed by Chrysa Arampatzi */
+.header {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    width: 100vw;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 6px;
+}
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: block;
+}
+.site-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.header-nav{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+.header-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.header-nav .dropdown {
+    position: relative;
+}
+
+.header-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 55;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.header-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*CSS Styling for these main elements that should all have the same style (font) everywhere*/
+
+a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header-container h1{
+    font-family: 'Geist';
+}
+.header a{
+    font-family: 'Geist';
+}
+.footer-container h1{
+    font-family: 'Geist';
+}
+.footer a{
+    font-family: 'Geist';
+}
+h2{
+    font-size:2.5rem;
+}
+/*Two classes that are one of main parts of making each section of the page fade in on scroll and fade out once scrolled past, it is combined with JS code. The hidden class makes it so that the opacity is 0, while the show class brings the opacity back to 1*/
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+}
+/*This class is styling for the button that makes the page scroll back to top, it has a fixed position which means it is always in the same place of the screen and cannot be scrolled past*/
+.top{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #e0d6d9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #ad525e;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 1;
+}
+/*CSS for the title section. The position of the elements is manipulated with the display:grid property*/
+.grid-container{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 100vh;
+    padding: 0px;
+    background-image: linear-gradient(#e9b6bc, #ad525e);
+    background-color: #e0d6d9;
+    
+    
+}
+.image{
+    height: fit-content;
+}
+.grid-container img{
+    height: inherit;
+}
+.title{
+    margin: 30px;
+    flex: 70vh;
+    font-size: 50px;
+    text-align: center;
+    color: #e0d6d9;
+    text-shadow: 2px 2px 5px #ad525e;
+}
+.image img{
+    width:100%;
+    height:auto;
+    background-size: cover;
+
+}
+
+/*CSS for the info section. We have an image as a background instead of a color. The position of the divs in the section and the elements in each div is manipulated through the display:flex property, as well as the flex-direction property*/
+.info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    background-image: url(../../images/background.jpg);
+    background-size: cover;
+}
+
+.text-container{
+    width: 750px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.text-container h2{
+    color: #e0d6d9;
+    text-shadow: 2px 2px 5px #ad525e;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.text-container p{
+    text-align: center;
+    font-size:1.25rem;
+    color: #0d1445;
+    text-shadow: 2px 2px 2px #e0d6d9;
+}
+
+.info-button button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #e0d6d9;
+    background-color: #ad525e;
+    border: #ad525e;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* CSS that makes all the buttons hover*/
+button{
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button:hover{
+    transform: translateY(-10px);
+}
+
+button a{
+    text-decoration: none;
+    color: #e0d6d9;
+}
+/*This class makes the buttons round and is applied to mostly all the buttons on the page*/
+.round-button{
+    width: 150px;
+    height: 45px;
+    border-radius: 40px;
+}
+/* css for the preforming arts section*/
+.perf-arts{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-image: linear-gradient(#e0d6d9, #f7d0db);
+    
+}
+.perf-buttons{
+    display: flex;
+    gap: 30px;
+}
+
+.perf-arts h2{
+    text-align: center;
+    color: #ad525e;
+    text-shadow: 2px 2px 2px #e0d6d9;
+    max-width: 600px;
+}
+
+.perf-text{
+    width: 500px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.perf-arts button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border:none;
+    padding: 0%;
+    margin: 0%;
+    cursor: pointer;
+}
+
+.perf-arts img{
+    padding: 0%;
+    border: none;
+    height: 400px;
+    display: block;
+}
+
+/* css for the culture section*/
+.culture-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+    background-image: linear-gradient( #c27882 , #ad525e);
+    
+}
+
+.culture{
+    text-align: center;
+    color: #e0d6d9;
+    text-shadow: 2px 2px 5px #ad525e;
+}
+
+.culture-container p{
+    color: #e0d6d9;
+}
+
+
+.culture-info{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.museums{
+    padding: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.galleries{
+    padding: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.culture-container button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ad525e;
+    background-color: #e0d6d9;
+    border:none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.culture-button{
+    margin-left:auto ;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+/* CSS for the events section. Again we have an image as a background.*/
+.events{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../../images/concerts.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.events-text{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    margin-bottom: 50px;
+    font-size: large;
+    color: #e0d6d9;
+
+}
+
+.events button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #e0d6d9;
+    background-color: transparent;
+    border:2px solid;
+    border-color: #e0d6d9;
+    border-radius: 20px;
+    cursor: pointer;
+    
+
+}
+
+.events-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+
+/* Responsive css*/
+@media only screen and (max-width: 1400px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .grid-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{
+        height: 300px;
+    }
+    .info-container{
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+    .text-container{
+        width: inherit;
+    }
+
+    .perf-arts{
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+    }
+
+    .perf-buttons{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .culture-container{
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+
+    .culture-info{
+        flex-direction: column;
+    }
+
+    .culture-info img{
+        width: 500px;
+       
+    }
+}
+/* Footer developed by Chrysa Arampatzi */
+.footer {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    height: 200px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 5;
+    margin-top: -40px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+
+.footer-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+
+.questions-section,
+.footer {
+    margin: 0; /* Remove unwanted margins */
+}
+
+.footer-nav .dropdown {
+    position: relative;
+}
+
+.footer-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 150;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: bottom center;
+}
+
+.footer-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 150;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.footer-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+

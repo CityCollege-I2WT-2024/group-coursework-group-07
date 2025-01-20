@@ -1,0 +1,461 @@
+/* CSS Developed by: Iva Doycheva */
+
+/*Importing fonts that are used throughout the whole website*/
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap'); 
+*{
+    box-sizing: border-box;
+    font-family: 'Geist', sans-serif;
+}
+/*made the scroll of the whole page smooth*/
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: #e0d6d9;
+    margin: 0px;
+}
+/*Style for the navigation bar*/
+/* Header developed by Chrysa Arampatzi */
+.header {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    width: 100vw;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 6px;
+}
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: block;
+}
+.site-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.header-nav{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+.header-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.header-nav .dropdown {
+    position: relative;
+}
+
+.header-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 55;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.header-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*CSS Styling for these main elements that should all have the same style (font) everywhere*/
+a button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.header-container h1{
+    font-family: 'Geist';
+}
+.header a{
+    font-family: 'Geist';
+}
+.footer-container h1{
+    font-family: 'Geist';
+}
+.footer a{
+    font-family: 'Geist';
+}
+h2{
+    font-size: 2.5rem;
+}
+/* CSS that makes all the buttons hover*/
+button{
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+
+button:hover{
+    transform: translateY(-10px);
+}
+
+button a{
+    text-decoration: none;
+    color: #e0d6d9;
+}
+/*Two classes that are one of main parts of making each section of the page fade in on scroll and fade out once scrolled past, it is combined with JS code. The hidden class makes it so that the opacity is 0, while the show class brings the opacity back to 1*/
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+}
+/*CSS for the title section of the page-makes the display property 'flex' in order to manipulate position, adds a background image from Pexels */
+.title{
+    display: flex;
+    height: 60vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #ad525e;
+    text-shadow: 2px 2px #0d1445;
+    background-image: url(../../images/culture-back.jpg) ;
+    background-size: cover;
+}
+/*CSS stylying for the button that brings you back to the main page of the entertainment section of the website*/
+.back{
+    padding: 10px 20px;
+    margin: 10px ;
+    font-size: 1rem;
+    color: #e0d6d9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #ad525e;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: fixed;
+    left: 0px;
+    z-index: 1;
+}
+/*This class is styling for the button that makes the page scroll back to top, it has a fixed position which means it is always in the same place of the screen and cannot be scrolled past*/
+.top{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #e0d6d9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #ad525e;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+/*CSS that styles the next three sections of the culture page, it gives them all a 'flex' display property*/
+.info-container{
+    display:flex;
+    flex-direction: row;
+    height: 60vh;
+    gap: 100px;
+    justify-content: center;
+}
+
+.museum{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    background-color: #eee3e6;
+    border: 2px solid #0d1445;
+    box-shadow: 15px 15px 2px #0d1445;
+    margin-top: 50px;
+    color: #0d1445;
+}
+
+
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    background-color: #eee3e6;
+    border: 2px solid #ad525e;
+    box-shadow: 15px 15px 2px #ad525e;
+    margin-top: 50px;
+    color: #ad525e;
+   
+}
+
+.choice-text{
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.choice-button{
+    margin-left: auto;
+    margin-right: auto;
+}
+.choice-button button{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #eee3e6;
+    background-color: #ad525e;
+    border: #ad525e;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.museum button{
+    background-color: #0d1445;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.links button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.museums{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: #0d1445;
+}
+.item-one{
+    display: flex;
+    flex-direction: row;
+    background-color: #eee3e6;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.item-one p{
+    font-size: 18px;
+}
+
+.item-one-img img{
+    width: 800px;
+    height: auto;
+    box-shadow: -15px 15px 0px #0d1445;
+}
+
+
+.item-one-text h2{
+    text-align: center;
+}
+.item-one-text{
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.item-two-img img{
+    width: 800px;
+    height: auto;
+    box-shadow: 15px 15px 0px #0d1445;
+}
+
+.galleries{
+    color: #ad525e;
+}
+
+.item-one-img-g img{
+    width: 800px;
+    height: auto;
+    box-shadow: -15px 15px 0px #ad525e;
+}
+
+.item-two-img-g img{
+    width: 800px;
+    height: auto;
+    box-shadow: 15px 15px 0px #ad525e;
+}
+
+/*Responsive CSS*/
+@media only screen and (max-width: 1100px){
+    .info-container{
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+        padding-bottom: 30px;
+       
+    }
+
+    .museum{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gallery{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .museums{
+        flex-direction: column;
+    }
+
+    .galleries{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .item-one{
+        flex-direction: column;
+    }
+    .item-one-text{
+        margin-bottom: 20px;
+    }
+    .item-two-img{
+        order: 1;
+    }
+
+    .item-two-img-g{
+        order: 1;
+    }
+}
+/* Footer developed by Chrysa Arampatzi */
+.footer {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    height: 200px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 5;
+    margin-top: -40px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+
+.footer-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.footer-nav .dropdown {
+    position: relative;
+}
+
+.footer-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 150;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: bottom center;
+}
+
+.footer-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 150;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.footer-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.questions-section,
+.footer {
+    margin: 0; /* Remove unwanted margins */
+}
+

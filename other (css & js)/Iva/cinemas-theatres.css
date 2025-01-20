@@ -1,0 +1,512 @@
+/* CSS Developed by: Iva Doycheva */
+
+/*Importing fonts that are used throughout the whole website*/
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap'); 
+*{
+    box-sizing: border-box;
+    font-family: 'Geist', sans-serif;
+}
+/*made the scroll of the whole page smooth*/
+html{
+    scroll-behavior: smooth;
+
+}
+body {
+    margin: 0px; 
+}
+/*Style for the navigation bar*/
+/* Header developed by Chrysa Arampatzi */
+.header {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    width: 100vw;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 6px;
+}
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: block;
+}
+.site-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.header-nav{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+.header-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.header-nav .dropdown {
+    position: relative;
+}
+
+.header-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 55;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.header-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*CSS Styling for these main elements that should all have the same style (font) everywhere*/
+a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header-container h1{
+    font-family: 'Geist';
+}
+.header a{
+    font-family: 'Geist';
+}
+.footer-container h1{
+    font-family: 'Geist';
+}
+.footer a{
+    font-family: 'Geist';
+}
+
+h2{
+    font-size: 2.5rem;
+}
+/*Two classes that are one of main parts of making each section of the page fade in on scroll and fade out once scrolled past, it is combined with JS code. The hidden class makes it so that the opacity is 0, while the show class brings the opacity back to 1*/
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+}
+/*CSS stylying for the button that brings you back to the main page of the entertainment section of the website*/
+.back{
+    padding: 10px 20px;
+    margin: 10px ;
+    font-size: 1rem;
+    color: #e0d6d9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #0d1445;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: fixed;
+    left: 0px;
+    z-index: 1;
+}
+/*This class is styling for the button that makes the page scroll back to top, it has a fixed position which means it is always in the same place of the screen and cannot be scrolled past*/
+.top{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #e0d6d9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #0d1445;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+/*CSS for the title section of the page-makes the display property 'flex' in order to manipulate position, adds a background image from Pexels, sets the height of the section */
+.title{
+    display: flex;
+    height: 60vh;
+    background-image: url(../../images/cinemas-main.jpg) ;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.title h1{
+    margin-left: 90px;
+    margin-bottom: 150px;
+    color: #0d1445;
+    text-shadow: 2px 2px 2px #e0d6d9;
+}
+
+.cinemas-info{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+    background-color: #e0d6d9;
+    overflow: hidden;
+    color: #0d1445;
+    margin: 0%;
+}
+
+.cinemas-info img{
+    width: 100%;
+    float: right;
+
+}
+.cinemas-info-img{
+ width: 100%;
+ flex: 1;
+}
+.cinemas-info-text{
+    flex: 1;
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+    
+.cinemas-info p{
+    font-size:30px;
+    width: 800px;
+    text-align: center;
+    color: #0d1445;
+}
+.cinemas-info h2{
+    text-shadow: 2px 2px 2px #0d1445;
+
+}
+
+.section{
+    background-color: #0d1445;
+    display: flex;
+    color: #e0d6d9;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    gap: 610px;
+}
+
+.section p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.choose{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    color: #e0d6d9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+}
+
+.cinemas{
+    background-color:#e0d6d9;
+    overflow: hidden;
+    height: 110vh;
+}
+/*CSS that defines the rows in the info section - makes it so that two items are next to each other*/
+.item-row{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item-one{
+    display: flex;
+    gap: 40px;
+    color: #0d1445;
+
+}
+.item-one img{
+ border-radius: 20%;
+ margin-top: 50px;
+ height: auto;
+ width: 300px;
+}
+
+.item-one-info{
+    text-align: center;
+    width: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+}
+.item-one p{
+    font-size: 18px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+/*The difference between item-one classes and item-two classes is in the position, item-ones are on the left in the row, while item-twos are on the right, which requires tweaking of the positioning*/
+.item-two{
+    display: flex;
+    gap: 40px;
+    color: #0d1445;
+    background-color: #e0d6d9;
+    justify-content: center;
+
+}
+.item-two img{
+ border-radius: 20%;
+ margin-top: 50px;
+ height: auto;
+ width: 300px;
+}
+
+.item-two-info{
+    text-align: center;
+    width: 300px;
+    margin-top: 50px;
+    
+}
+.item-two p{
+    font-size: 18px;
+}
+
+
+/* CSS that makes all the buttons hover*/
+
+button{
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+
+button:hover{
+    transform: translateY(-10px);
+}
+
+button a{
+    text-decoration: none;
+    color: #e0d6d9;
+}
+
+/*Responsive CSS*/
+@media only screen and (max-width: 1400px){
+    .title{
+        flex-direction: column;
+    } 
+
+    .section{
+        width: inherit;
+        gap: 50px;
+    }
+    .section p{
+        font-size: 25px;
+    }
+    .cinemas-info{
+    flex-direction: column;
+    height: fit-content;
+    }
+    .cinemas{
+        height: fit-content;
+    }
+    .item-row{
+        flex-direction: column;
+        width: inherit;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .title{
+        flex-direction: column;
+    } 
+
+    .section{
+        width: inherit;
+        gap: 50px;
+    }
+    .section p{
+        font-size: 25px;
+    }
+    .cinemas-info{
+    flex-direction: column;
+    height: fit-content;
+    }
+    .cinemas{
+        height: fit-content;
+    }
+    .item-row{
+        flex-direction: column;
+        width: inherit;
+    }
+    .item-one{
+        flex-direction: column;
+        margin:0%
+    }
+    .item-one-img{
+        order: -1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-one-info{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-two{
+        flex-direction: column;
+        margin: 0%;
+    }
+
+    .item-two-img{
+        order: -1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-two-info{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    
+}
+/* Footer developed by Chrysa Arampatzi */
+.footer {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    height: 200px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 5;
+    margin-top: -40px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+
+.footer-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.footer-nav .dropdown {
+    position: relative;
+}
+
+.footer-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 150;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: bottom center;
+}
+
+.footer-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 150;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.footer-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.questions-section,
+.footer {
+    margin: 0; /* Remove unwanted margins */
+}
+

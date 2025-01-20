@@ -1,0 +1,492 @@
+/* CSS page: Daytime by Leandra Krasniqi */
+/* Header and Footer CSS made by Chrysoula Arampatzi */
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap'); 
+/*geist font*/
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap'); 
+/*geist mono font*/
+
+*{
+    box-sizing: border-box;
+    font-family: 'Geist', sans-serif;
+}
+
+/*Overall HTML styling*/
+html{
+    scroll-behavior: smooth; 
+    scroll-padding-top: 50px; 
+    overflow-x: hidden;
+    margin-right: 0%;
+}
+
+body {
+    margin: 0px; 
+    /* No space around the body */
+    background-color: white; 
+}
+
+/* Header made by Chrysoula Arampatzi*/
+.header {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    width: 100vw;
+    position: absolute;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 6px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: block;
+}
+.site-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.header-nav{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+.header-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.header-nav .dropdown {
+    position: relative;
+}
+
+.header-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 55;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.header-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.parts {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr; 
+    gap: 20px;
+    align-items: center;
+    padding: 40px;
+    background: url(../../images/day-sky-3.jpg); 
+    box-shadow: inset 0 0 0 1000px rgba(255, 245, 245, 0.789); 
+    /* This adds shading layer on top of the image */
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 220px;
+}
+
+/* Text Contents of the section*/
+.heading{
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+    color: #7e7eaa;
+}
+
+.under-heading {
+    font-size: 1.3rem;
+    color:#464343;
+    margin-bottom: 15px;
+}
+
+.content {
+    text-align: left; 
+}
+
+.content h1 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #333; 
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555; 
+}
+
+/* Introductions sections image*/
+.introimage img {
+    display: block;
+    width: 60%;
+    object-fit: cover; 
+    /* This will make sure the image covers the area */
+    border-radius: 0; 
+    box-shadow: none; 
+}
+
+.introimage {
+    height: 100%; 
+    /* A full height container */
+    display: flex;
+    align-items: center; 
+    /* Will vertically center the image */
+    justify-content: center; 
+    /* Will horizontally center the image */
+}
+
+/* See More Button */
+.see-more {
+    display: flex; 
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+.see-more a {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.445);
+    border: 2px solid #bbbbbb;
+    border-radius: 20px;
+    padding: 18px;
+    color: #474646;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 100px;
+}
+
+.see-more a:hover{
+    color:#464343;
+    transform: translateY(-4px); 
+    /* Hover effect for the button*/
+}
+
+.see-more a:active{
+    color: #333;
+    transform: translateY(0px); 
+    /* Goes back to original button styling */
+}
+
+/* Moving Section */
+.moving-section {
+    background-color: #c2d9d1;
+    text-align: center;
+    padding: 10px 0; 
+    overflow: hidden; 
+    /* This hides content outside the visible containers*/
+    position: relative; 
+    /* Allows to add more content without disrupting the flow*/
+}
+
+.moving-section h2 {
+    margin-bottom: 10px; 
+    /* Space away from the animated section */
+    font-size: 1.4rem;
+    color: #699c8a;
+}
+.scrolling-text {
+    display: flex; 
+    /* Aligns 'p' elements horizontally*/
+    gap: 50px; 
+    /* Creates gap between text, to know when sections change*/
+    animation: scroll-left 30s linear /*constant speed of movement*/ infinite 
+}
+
+.scrolling-text p {
+    white-space: nowrap; 
+    /* No wrapping of the text in multiple lines*/
+    font-size: 1.2rem;
+    color:#83afa0;
+    font-family: 'Geist Mono', monospace;
+}
+
+@keyframes scroll-left{ /* Defines animation for moving text */
+
+    0% {
+        transform: translateX(100%); 
+        /* This transform moves text container completely to the right (100% of the right)*/
+    }
+    100% {
+        transform: translateX(-100%); 
+        /*Then moves the text container completely to the left (100% of the left)*/
+    }
+}
+
+/* Second Section */
+.contenttwo {
+    text-align: center; 
+}
+
+.contenttwo p{
+    margin: 40px;
+    color: #333;
+}
+
+#second-part{
+    margin-top: 50px;
+}
+
+#second-part p{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/* Map */
+#containerMap {
+    display: flex;
+    height: 500px; 
+    /* Same height as the map */
+}
+  
+#map {
+    flex-grow: 1; 
+    /* Map takes the remainding space left*/
+}
+
+/* The markers for the map via leaflet-tooltip */
+.leaflet-tooltip {
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*CAFE LIST*/
+
+#list {
+    margin-top: 50px;
+}
+
+#list h2 {
+    padding-bottom: 10px;
+}
+
+#backgrounded-section{
+    background: url(../../images/day-sky-3.jpg); 
+    /* Image Background for the entire section */
+    box-shadow: inset 0 0 0 1000px rgba(236, 229, 229, 0.568);
+    /* Shading layer to soften the background */
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+}
+
+/* Scroll menu of cafes*/
+div.scrollmenu { 
+    /* Adding properties for it to scroll and now show remainding places*/
+    background-color: #bfbfdb;
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    white-space: nowrap; 
+}
+  
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+  
+div.scrollmenu a:hover {
+    background-color: #7e7eaa;
+    /* Different color on hover */
+}
+
+/* List of Cafes*/
+#section-cafe {
+    margin: 0 50px 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* Three columns of content */
+    gap: 20px;
+    align-items: start; 
+    /* Align items to the top */
+}
+
+.list-cafe {
+    border: 2px solid #bfbfdb;
+    background-color: white;
+    box-shadow: 12px 12px 2px 1px #bfbfdb;
+    width: 100%; 
+    /* Full width inside the grid cell */
+    max-width: 400px; 
+    padding: 15px;
+    margin: 20px;
+    height: 700px;  
+    transition: 0.3s ease;
+}
+
+.list-cafe h2 {
+    color:#8787aa;
+}
+
+.list-cafe h3 {
+    color: #7e7eaa;
+}
+
+.list-cafe:hover {
+    box-shadow: 12px 12px 2px 1px #7e7eaa;
+    /* A hover shadow */
+    transform: translateY(-4px);
+}
+
+.list-cafe:target {
+    box-shadow: 12px 12px 2px 1px #7e7eaa;
+    background-color: rgb(229, 229, 229);
+}
+
+.image-list img{
+    max-width: 350px;
+    padding-left: 10px;
+    height: 240px;
+}
+
+/* Changing the color of the recommendation for it to pop out */
+.recommendation{
+    padding-left: 5px;
+    padding-top: 10px;
+    color: #7e7eaa;
+}
+
+.info-cafe {
+    display: block;
+}
+
+#second-see-more{
+    display: flex; 
+    position: relative;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Footer CSS made by Chrysoula Arampatzi */
+.footer {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 5;
+    margin-top: -70px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+
+.footer-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.footer-nav .dropdown {
+    position: relative;
+}
+
+.footer-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 150;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: bottom center;
+}
+
+.footer-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 150;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.footer-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}

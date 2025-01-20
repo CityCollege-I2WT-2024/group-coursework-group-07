@@ -1,0 +1,672 @@
+/* CSS Developed by: Chrysa Arampatzi */
+
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap'); 
+*{
+    box-sizing: border-box;
+    font-family: 'Geist', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Geist', sans-serif;
+    color: #fff;
+    background-color: #182636;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    width: 100vw;
+    position: absolute;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 6px;
+}
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: block;
+}
+.site-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.header-nav{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+.header-nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.header-nav .dropdown {
+    position: relative;
+}
+
+.header-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 55;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.header-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Welcome Section */
+.welcome-wrapper {
+    height: 130vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 100px;
+}
+
+.welcome-bg {
+    background: url('../../images/WhiteTowerMain.jpeg') no-repeat center center/cover;/* Parallax background */
+    top: 0;
+    left: 0;
+    background-position: -250px center, center -50px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: translateY(0);
+    
+    
+}
+/* Vertical Border */
+ .vertical-border-left {
+    position: fixed;
+    left: 0; 
+    top: 0;
+    height: 100vh; 
+    width: 5px; 
+    background-color: #182636; 
+    z-index: 0;
+ }
+
+.vertical-border-right {
+    position: fixed; 
+    right: 0; 
+    top: 0;
+    height: 100vh; 
+    width: 80px; 
+    background-color: #182636; 
+    z-index: 2; 
+}
+
+.welcome-overlay {
+    position: absolute; /* Floating within the welcome section */
+    top: 40%; /* Center vertically */
+    left: 12%; 
+    transform: translateY(-50%); /* Offset the overlay upwards to perfectly center */
+    width: 25%; 
+    background-color: #b7cade8a;
+    padding: 40px 30px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect to "lift" the overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+} 
+
+.welcome-title {
+    color: #182636;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.welcome-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.welcome-description {
+    color: #182636;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.welcome-btn {
+    color: #B7CADE;
+    background-color: #182636;
+    border: 2px solid #182636;
+    padding: 8px 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.welcome-btn:hover{
+    background-color: transparent;
+    color: #182636;
+    border-color: #182636;
+}
+
+/* Discover Section */
+.discover-section {
+    height: 70vh;
+    width: 100vw;
+    
+    position: relative;
+    background-color: #182636; 
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+}
+
+.discover-container {
+    display: flex; 
+    align-items: stretch; 
+    justify-content: center; 
+    gap: 0px; 
+    max-width: 1200px; /* Restrict width for large screens */
+    margin: 0 auto; /* Center the container */
+}
+
+.discover-image-left {
+    flex: 1.7;
+    display: flex;
+    z-index: 50;
+}
+.discover-image-right {
+    flex: 0.8; 
+    display: flex;
+}
+
+.discover-image-left video,
+.discover-image-right img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.discover-content {
+    flex: 1.1; 
+    display:flex;
+    flex-direction: column;
+    background-color: #B7CADE; 
+    padding: 30px;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.discover-content h2 {
+    font-size: 2rem;
+    color: #182636; 
+    margin-top: 40px;
+    
+}
+
+.discover-content p {
+    font-size: 1.1rem;
+    color: #182636;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Explore Section */
+
+.explore-section {
+    
+    width: 100%;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    z-index: 0;
+    text-align: center;
+    padding-top: 0;
+}
+
+.explore-section h2 {
+    font-size: 2.5 rem;
+    color: #85b7ed; 
+    margin-bottom: 60px;
+}
+
+.explore-section .explore-cards {
+    display: flex; 
+    justify-content: center; 
+    gap: 18px; 
+    flex-wrap: wrap; /* Wrap on small screens */
+}
+
+.explore-section .explore-card {
+    background-color: #B7CADE;
+    border-radius: 0px;
+    width: 250px;
+    height: 450px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.explore-section .explore-card img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    
+}
+
+.explore-section .explore-card h3 {
+    font-size: 1rem;
+    color: #182636;
+    margin-bottom: 25px;
+}
+
+.explore-section .explore-card .card-btn {
+    background-color: #182636;
+    color: #B7CADE;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: backround-color 0.5s ease;
+}
+
+.explore-section .explore-card:hover {
+    transform: scale(1.07); /* Slight enlargment effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.explore-card .card-btn:hover {
+    background-color: #85b7ed;
+    color:white;
+
+}
+
+/* Testimonials Section */
+
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #182636;
+    margin-top: 150px;
+}
+
+
+.testimonials-container {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    position: relative;
+}
+
+.testimonial-image {
+    width: 50%;
+    height: 450px;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* to prevent distortion */
+    border-radius: 0; 
+    z-index: 9;
+}
+
+.slideshow {
+    width: 60%;
+    background-color: #85b7ed; 
+    padding: 60px 40px;
+    text-align: center;
+    height: 550px;
+    margin-top: -50px;
+    flex-direction: column;
+    min-height: 550px; /* Fixed height to avoid shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+    gap: 5px;
+}
+
+.section-title {
+    
+    font-size: 2.5rem;
+    color: #182636;
+    margin-bottom: 15px;
+}
+
+.slides-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    min-height: 180px;
+    max-width: 100%;
+    margin: 20px auto;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slide {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+
+
+}
+
+.slide.active {
+    
+    transform: translateX(0); /* stay in place */
+}
+
+.slide.slide-in-left {
+    
+    transform: translateX(0); /* slide in from the left */
+}
+
+.slide.slide-in-right {
+ 
+    transform: translateX(0); /* slide in from the right */
+}
+
+
+.slide.slide-out-left {
+    
+    transform: translateX(-100%); /* Slide out to the left */
+}
+
+.slide.slide-out-right {
+    
+    transform: translateX(100%); /* Slide out to the right */
+}
+
+
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #182636;
+    line-height: 1.8;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 80%;
+    
+}
+
+
+.dots {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    pointer-events: auto;
+    position: relative;
+    z-index: 12;
+    
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #182636;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    
+}
+
+.dot.active {
+    background-color: transparent; 
+    border: 2px solid #182636;
+    width: 10px;
+    height: 10px;
+}
+
+
+
+
+/* Questions Section */
+.questions-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #182636; 
+    padding: 50px 0; 
+    margin-bottom: 80px;
+}
+
+.questions-box {
+    background-color: #B7CADE; 
+    width: 80%; 
+    max-width: 1000px; /* Prevent it from getting too wide */
+    padding: 40px 20px; 
+    text-align: center; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.questions-box h2 {
+    color: #182636;
+    font-size: 36px; 
+    margin-bottom: 20px;
+}
+
+.questions-box p {
+    color: #182636;
+    font-size: 18px; 
+    margin-bottom: 30px;
+}
+
+.questions-box .questions-btn {
+    background-color: #182636; 
+    color: #B7CADE;
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    border-radius: 25px; 
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.questions-box .questions-btn:hover {
+    background-color: transparent;
+    color: #182636;
+    border: 2px solid #182636;
+}
+
+/* Decorative Umbrella Section */
+.decorative-section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 150px;
+}
+
+.umbrella-bg {
+    width: 100%;
+    height: 80%;
+    background: url('../../images/Umbrellas.jpeg')no-repeat center center/cover; /* Ensure correct path */
+    top: 80px;
+    left: 0;
+    z-index: 100;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+body, html {
+    overflow-y: scroll; /* Ensure vertical scrolling works */
+}
+
+/* Footer */
+.footer {
+    background-color: #182636;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 5;
+    margin-top: -70px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    z-index: 5;
+}
+
+.footer-nav a {
+    color: white; 
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+    color: #9eb8d1; /* Hover effect similar to the header */
+}
+
+.footer-nav .dropdown {
+    position: relative;
+}
+
+.footer-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: #182636;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 190px;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 150;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: bottom center;
+}
+
+.footer-nav .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    z-index: 150;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav .dropdown-menu a:hover {
+    color: #9eb8d1
+}
+
+.footer-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.questions-section,
+.footer {
+    margin: 0; /* Remove unwanted margins */
+}
+

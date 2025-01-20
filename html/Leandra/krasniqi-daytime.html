@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<!-- Developed by: Leandra Krasniqi  -->
+<html>
+    <head>
+        <!--HTML page: Daytime by Leandra Krasniqi-->
+        <title>
+            Thessaloniki Survival Guide
+        </title>
+        <!--Icon at the top of screen-->
+        <link rel="icon" type="image/x-icon" href="../../images/ribbon-bow.png">
+        
+        <!--CSS Files-->
+        <link rel="stylesheet" type="text/css" href="../../other (css & js)/Leandra/krasniqi-daytime.css">
+        <!--Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <!-- Leaflet MarkerCluster CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" />
+    
+        <!--Javacript files-->
+        <script src="../../other (css & js)/Leandra/krasniqi-daytime.js"></script>
+        <!--Leaflet Javascript -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <!--Leaflet MarkerCluster JavaScript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js" defer></script>
+    </head>
+    <body>
+
+        <!--This is the DAYTIME Page-->
+
+        <!--Header made by Chrysoula Arampatzi-->
+        <header class="header">
+            <div class="header-container">
+                <a href="../../index.html" class="logo-link">
+                <div class="logo">
+                    <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+                    <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+                </div>
+                </a>
+                <nav>
+                    <ul class="header-nav">
+                        <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="../Iva/entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Iva/cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="../Iva/culture.html">Culture</a></li>
+                                <li><a href="../Iva/events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Intro Section -->
+        <!--This section is the introduction to the the City Lifes Daytime page-->
+        <div class="parts">
+            <div class="introimage">
+                <img src="../../images/—Pngtree—coffee coffee beans coffee powder_6373235.png" alt="Coffee PNG">
+            </div>
+            <div class="content">
+                <h1 class="heading" style="font-size: 2.5rem;">Experience Thessaloniki by Day</h1>
+                <p id="abstract">Thessaloniki by day is a vibrant blend of history, culture, and modern flair. Begin your morning with a leisurely coffee in one of the city’s countless <em>kafeneia</em> (cafés). Thessaloniki is famous for having the most cafés per capita in Europe, making coffee an integral part of daily life. Whether you prefer a Greek freddo espresso or a cozy spot with artisanal brews, districts like Aristotelous Square, Ladadika, and the charming streets of Ano Poli offer atmospheric café experiences perfect for soaking in the city vibes</p>
+                <h2 class="under-heading">"A cup of coffee shared with a friend is happiness tasted and time well spent."</h2>
+                <!--Buttons leading to the map of the page, right below, and the list of places, under that section-->
+                <div class="see-more">
+                    <a href="#second-part">See Map</a>
+                    <a href="#list">See List</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Moving Section-->
+            <!--This section is an "animated" section of the page, made of three facts in 'p' elements, constantly moving across the screen-->
+        <section id="moving" class="moving-section"> 
+            <h2>Did You Know?</h2>
+            <div class="scrolling-text">
+                <p>Thessaloniki has a strong coffee culture, with cafes offering everything from Greek coffee to espresso, making them perfect for socializing or working.</p>
+                <p>Areas like Ladadika and Aristotelous Square are full of trendy cafes, many with a bohemian or vintage vibe.</p>
+                <p>La Doze Bar offers a great view of the sea and the White Tower, making it a perfect spot for coffee and people-watching.</p>
+            </div>
+        </section>
+
+        <!--Second Content-->
+            <!--This section includes an introductory sentence to the part, and a container with the interactive map-->
+        <div id="second-part" class="contenttwo">
+            <h2 class="under-heading">Discover Thessaloniki’s Best Cafés</h2>
+            <p>Use the map below to explore some of the top cafés in Thessaloniki. Click on a location to learn more about each café’s unique atmosphere, offerings, and what makes it a great spot for your next coffee break. Whether you're after a traditional Greek coffee or a trendy espresso, you'll find the perfect place to enjoy your day.</p>
+        </div>
+
+        <!--Map Container-->
+            <!--Includes the Map along with styling-->
+        <div id="containerMap">
+            <!--Map-->
+            <div id="map" style="width: 75%; height: 500px;"></div> 
+        </div>
+
+         <!--List Section-->
+            <!--This section includes an introductory sentence to the part, a scroll menu and list of all the Cafes-->
+        <div id="list" class="contenttwo">
+            <h2 class="under-heading">A Curated List of Thessaloniki’s Best Cafés and Their Stories</h2>
+            <p>Explore some of Thessaloniki’s top cafés in the list below. Each entry highlights a café’s unique atmosphere, offerings, and what makes it a great destination for your next coffee break. Whether you're in the mood for a traditional Greek coffee or a trendy espresso, you'll find the ideal spot to relax and enjoy your day in the city.</p>
+        </div>
+
+        <!--Scroll Menu - Cafes-->
+        <!--It's made of many cafe's names linked to all the id's I have added to each cafe, to lead to each one after clicking on them-->
+        <div class="scrollmenu">
+            <a href="#albeta">Albeta Bakery</a>
+            <a href="#caravan">The Caravan Cafe</a>
+            <a href="#koukos">Koukos</a>
+            <a href="#menta">Menta Cafe Bar</a>
+            <a href="#valenio">Valenio</a>
+            <a href="#spoon">Spoon Thessaloniki</a>
+            <a href="#jardin">Le Jardin Extraordinaire Café</a>
+            <a href="#blue">The Blue Cup</a>
+            <a href="#palermo">Palermo</a>
+            <a href="#garden">The Garden Bar</a>
+            <a href="#skyline">SKYLINE - OTE Tower</a>
+            <a href="#la-nina">La Nina Frida</a>
+            <a href="#tribeca">Tribeca</a>
+            <a href="#ypsilon">Ypsilon</a>
+            <a href="#shed">shed 小屋 Specialty Coffee Shop</a>
+            <a href="#lena">Lena's Bistro</a>
+            <a href="#canela">CANELA Coffeshop</a>
+            <a href="#noon">Noon Cafe</a>
+            <a href="#mandarini">Mandarini SKG</a>
+            <a href="#naked">NAKED Specialty Coffee and Brunch</a>
+        </div>
+        
+        <div id="backgrounded-section">
+            <!--Cafe's List-->
+            <div id="section-cafe">
+                
+                <a href="https://maps.app.goo.gl/hZ4xBnv1MxR9V8Tn7" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="albeta" href="https://maps.app.goo.gl/hZ4xBnv1MxR9V8Tn7">
+                        <h2 > Albeta Bakery</h2>
+                        
+                        <p>Albeta Bakery is renowned for its freshly baked pastries and rich, aromatic coffee. The cozy ambiance makes it a great spot for both a morning pick-me-up or a sweet afternoon treat.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 7:00 AM - 9:00 PM</p>
+                            <p class="recommendation">Try their signature croissants with a cappuccino for the perfect start to your day.</p>
+                        </div> 
+                        <div class="image-list"><img src="../../images/albeta-image.jpg" alt="Albeta Bakery - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/RdJDBHjPQTZv5Uyg7" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="caravan">
+                        <h2>The Caravan Cafe</h2>
+                        
+                        <p>A trendy and cozy cafe offering delicious brunch options and a wide variety of specialty coffee. The vibrant atmosphere is ideal for meeting up with friends or enjoying a solo coffee break.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.7/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 7:00 PM</p>
+                            <p class="recommendation">Their avocado toast is a crowd favorite, paired with a flat white.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/caravan-image.jpg" alt="The Caravan Cafe - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/qLZPsWbSeTSDd9i97" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="koukos">
+                        <h2>Koukos</h2>
+                        
+                        <p>Known for its traditional Greek pastries, Koukos offers a warm, friendly atmosphere that makes you feel right at home. It's a wonderful place to experience the flavors of Greece.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.6/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 7:30 AM - 8:00 PM</p>
+                            <p class="recommendation">Don’t miss their bougatsa – a delicious Greek pastry with custard filling.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/koukus-image.jpg" alt="Koukos - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/U9hhSdf9aLpLzP6u7" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="menta"> 
+                        <h2>Menta Cafe Bar</h2>
+                        
+                        <p>Menta offers a tranquil ambiance where you can enjoy quality coffee blends. It's a great escape from the hustle and bustle of the city, ideal for a quiet afternoon.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.3/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 9:00 AM - 10:00 PM</p>
+                            <p class="recommendation">Their cold brew coffee is perfect for hot days.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/menta-image.jpg" alt="Menta Cafe Bar - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/e1ufRDGtwsjUe7U39" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="valenio"> 
+                        <h2>Valenio</h2>
+                        
+                        <p>This modern café is popular for its strong espresso and sweet treats. It’s a great place for a quick coffee break or to indulge in a little dessert.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.4/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 9:00 PM</p>
+                            <p class="recommendation">Try their espresso with a slice of cheesecake – an unbeatable combination.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/valenio-image.jpg" alt="Valenio - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/muhoqvBrVuhkUfwr6" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="spoon"> 
+                        <h2>Spoon Thessaloniki</h2>
+                        
+                        <p>Famous for its brunch offerings and specialty drinks, Spoon is a great spot for both coffee lovers and brunch enthusiasts alike. The laid-back vibe makes it perfect for a relaxed morning out.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.8/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 5:00 PM</p>
+                            <p class="recommendation">Their Eggs Benedict is highly recommended with a fresh orange juice.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/spoon-image.jpg" alt="Spoon Thessaloniki - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/ohdRiWFzycmcuKLq7" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="jardin"> 
+                        <h2>Le Jardin Extraordinaire Café</h2>
+                        
+                        <p>An enchanting garden café, Le Jardin offers a relaxing atmosphere surrounded by greenery. It's an excellent place to unwind with a book or meet friends for a casual hangout.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.6/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 8:00 PM</p>
+                            <p class="recommendation">Enjoy a latte while taking in the serene garden ambiance.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/le-jardin-extraordinaire-image.jpg" alt="Le Jardin Extraordinaire Café - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/aYnBGPE5eqmhaogo7" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="blue"> 
+                        <h2>The Blue Cup</h2>
+                        
+                        <p>A trendy café serving high-quality coffee and delicious snacks, The Blue Cup offers an aesthetic environment where you can savor both your drink and the surroundings.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 9:00 PM</p>
+                            <p class="recommendation">Their iced mocha is a popular choice, especially in the summer.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/blue-image.jpg" alt="The Blue Cup - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/d3uUWx4gLZCHf5qr8" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="palermo"> 
+                        <h2>Palermo</h2>
+                        
+                        <p>Palermo is a chic spot known for its great coffee and small plates. The intimate vibe is ideal for both casual coffee sips and social gatherings.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.3/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 8:00 PM</p>
+                            <p class="recommendation">Their signature paninis are delicious when paired with a cappuccino.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/palermo-image.jpg" alt="Palermo - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/S7PMAEcm6ETzWkcz6" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="garden"> 
+                        <h2>The Garden Bar</h2>
+                        
+                        <p>Known for its outdoor seating and calming atmosphere, The Garden Bar is perfect for those who want to relax in a peaceful environment while enjoying their coffee.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.6/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 9:00 AM - 10:00 PM</p>
+                            <p class="recommendation">Enjoy their homemade cakes with a freshly brewed coffee.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/garden-image.jpg" alt="The Garden Bar - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/Xo8esPBvhcqNibMV8" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="skyline"> 
+                        <h2>SKYLINE - OTE Tower</h2>
+                        
+                        <p>This café offers panoramic city views while you sip on your coffee. It's a great place to unwind and take in the breathtaking scenery of Thessaloniki.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.7/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 10:00 AM - 6:00 PM</p>
+                            <p class="recommendation">The view from the top is amazing – pair it with a mocha for the full experience.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/skyline-image.jpg" alt="SKYLINE - OTE Tower - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/fNQSi3wj3YUhscrE7" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="la-nina"> 
+                        <h2>La Nina Frida</h2>
+                        
+                        <p>A quirky café with creative interior design, La Nina Frida serves excellent drinks and has a vibrant atmosphere. It’s a great place to enjoy a coffee break and soak in the artistic surroundings.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.6/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 8:00 PM</p>
+                            <p class="recommendation">Try their creative lattes, like the lavender-flavored one.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/la-nina-image.jpg" alt="La Nina Frida - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/Fg3FmxR9yZ3Q8DFFA" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="tribeca"> 
+                        <h2>Tribeca</h2>
+                        
+                        <p>Combining specialty coffee with a stylish ambiance, Tribeca is a trendy spot in Thessaloniki. It’s the perfect place for both work and leisure.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 9:00 PM</p>
+                            <p class="recommendation">Their iced coffee is a favorite during the warmer months.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/tribeca-image.jpg" alt="Tribeca - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/TZRhP5c3XbrU5VgdA" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="ypsilon"> 
+                        <h2>Ypsilon</h2>
+                        
+                        <p>Ypsilon is a cultural hub offering coffee, art, and events. It's a perfect destination for both art lovers and coffee enthusiasts.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.4/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 9:00 AM - 10:00 PM</p>
+                            <p class="recommendation">Enjoy a latte while checking out the local art exhibitions.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/ypsilon-image.jpg" alt="Ypsilon - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/cUjquZpsAD4weDZD6" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="shed"> 
+                        <h2>shed 小屋 Specialty Coffee Shop</h2>
+                        
+                        <p>A minimalist café focused on top-quality coffee, Shed is a go-to for those who appreciate simplicity and craft. It’s all about the coffee here.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.7/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 7:00 PM</p>
+                            <p class="recommendation">Try their pour-over coffee for an authentic coffee experience.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/shed-image.jpg" alt="shed 小屋 Specialty Coffee Shop - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/Knc6K47jSgH934rR7" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="lena"> 
+                        <h2>Lena's Bistro</h2>
+                        
+                        <p>A charming café serving coffee and light meals, Lena's Bistro has a cozy and inviting atmosphere, making it perfect for a relaxing day out.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.3/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 9:00 PM</p>
+                            <p class="recommendation">Their grilled sandwiches are a popular choice among regulars.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/lenas-image.jpg" alt="Lena's Bistro - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/xv3a3tYCJVXtNWaz6" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="canela"> 
+                        <h2>CANELA Coffeshop</h2>
+                        
+                        <p>CANELA is a cozy place offering great coffee and desserts. It's a wonderful spot to enjoy a treat with a warm beverage.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.5/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 8:00 PM</p>
+                            <p class="recommendation">Their chocolate cake paired with a cappuccino is a perfect match.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/candella-image.jpg" alt="CANELA Coffeshop - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/DtsG3QNDFDcvvkvDA" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="noon"> 
+                        <h2>Noon Cafe</h2>
+                        
+                        <p>Noon Cafe is a stylish café offering brunch and aromatic coffee. It’s a popular hangout for those looking to enjoy a light meal and a delicious brew.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.4/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 6:00 PM</p>
+                            <p class="recommendation">Their Eggs Florentine is highly recommended for brunch.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/noon-image.jpg" alt="Noon Cafe - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/2wkDqmiyL1U12X9y9" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="mandarini"> 
+                        <h2>Mandarini SKG</h2>
+                        
+                        <p>Known for its inviting décor and quality drinks, Mandarini offers a welcoming atmosphere perfect for a coffee break with friends.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.6/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 8:00 PM</p>
+                            <p class="recommendation">Their citrus-infused iced tea is a refreshing choice.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/mandarini-image.jpg" alt="Mandarini SKG - Picture"></div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/Aoxwmm34hAumwLaJ6" target="_blank" style="text-decoration: none;  color: inherit;">
+                    <!--Links the to corresponding google maps address-->
+                    <div class="list-cafe" id="naked"> 
+                        <h2>NAKED Specialty Coffee and Brunch</h2>
+                        
+                        <p>NAKED is a hip café with specialty coffee and creative brunch dishes. It's a trendy spot for both coffee lovers and foodies.</p>
+                        <div class="info-cafe">
+                            <h3>Rating</h3><p>4.8/5</p>
+                            <h3>Working Hours</h3><p>Mon-Sun: 8:00 AM - 8:00 PM</p>
+                            <p class="recommendation">Their specialty coffee blends and vegan breakfast options are a must-try.</p>
+                        </div>
+                        <div class="image-list"><img src="../../images/naked-image.jpg" alt="NAKED Specialty Coffee and Brunch - Picture"></div>
+                    </div>
+                </a>
+
+                <!-- Buttons that take you to the seen-before parts of this page -->
+                <div id="second-see-more" class="see-more">
+                    <a href="#second-part">Back to Map</a>
+                    <a href="#list">Back to List</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <a href="../../index.html" class="logo-link">
+                <div class="logo">
+                    <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+                    <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+                </div>
+                </a>
+                <nav>
+                    <ul class="footer-nav">
+                        <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="../Iva/entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Iva/cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="../Iva/culture.html">Culture</a></li>
+                                <li><a href="../Iva/events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
+    </body>
+</html>

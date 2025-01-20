@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!-- Developed by: Iva Doycheva  -->
+<html>
+    <head>
+        <title>Thessaloniki Survival Guide</title>
+        <link rel="icon" type="image/x-icon" href="../../images/ribbon-bow.png">
+        <!--icon at the top of screen-->
+        <link rel="stylesheet" href="../../other (css & js)/Iva/culture.css">
+        <script defer src="../../other (css & js)/Iva/entertainment-script.js"> </script>
+    </head>
+    <body>
+         <!--A button element that brings you back to the main page of the entertainment section.-->
+        <a href="entertainment-main.html"><button class="back">Back</button></a>
+         <!--A button element that is triggered "on click" and brings you back to the top of the page. It is linked to javascript code-->
+        <button onclick="toTop()" class="top">Back to top</button>
+        <header class="header">
+            <div class="header-container">
+                <a href="../../index.html" class="logo-link">
+                <div class="logo">
+                    <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+                    <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+                </div>
+                </a>
+
+            <!-- Header developed by Chrysa Arampatzi -->
+                <nav>
+                    <ul class="header-nav">
+                        <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="culture.html">Culture</a></li>
+                                <li><a href="events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Leandra/krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Leandra/krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="../Leandra/krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="culture">
+            <!--Title section of the culture page, it contains the title. The hidden class is there in order to make the scroll animation in js work, the class is defined in css-->
+            <div class="title hidden">
+              <h1>CULTURE</h1>  
+            </div>
+            <!--First container of the page, it contains information about the two subsections- museums and galleries, and buttons that each lead to said subsection -->
+            <div class="info-container hidden">
+                <div class="museum hidden" >
+                    <div class="choice-text">
+                        <h2>Museums</h2>
+                        <p> Delve into Thessaloniki’s vibrant past and dynamic present through its diverse museums. From ancient artifacts and Byzantine treasures to contemporary exhibits and interactive displays, the city’s museums offer something for everyone. Discover the stories and heritage that shape Thessaloniki, and enjoy a journey through time.</p>
+                    </div>
+                    <div class="choice-button">
+                        <a href="#museums"><button class="round-button">Discover more</button></a>
+                    </div>
+                </div>
+
+                <div class="gallery hidden">
+                    <div class="choice-text">
+                        <h2>Art Galleries</h2>
+                        <p>Immerse yourself in Thessaloniki’s flourishing art scene by visiting its exceptional galleries. Showcasing a blend of contemporary masterpieces and traditional works, these galleries offer a window into the creative spirit of the city. Experience a diverse range of exhibitions, from local artists to international talents.</p>
+                    </div>
+                    <div class="choice-button">
+                        <a href="#galleries"><button class="round-button">Discover more</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Second main section of the culture page, made up of divs for easier position manipulation with css-->
+        <section id="museums" class="museums hidden">
+            <div class="item-one hidden">
+                <div class="item-one-text">
+                    <h2>Archaeological Museum of Thessaloniki</h2>
+                    <p>The Archaeological Museum of Thessaloniki is one of the city's most important museums, housing an extensive collection of artifacts from Macedonia's ancient past. Highlights include exhibits on prehistoric Macedonia, the development of the city, and treasures from the Royal Tombs of Vergina.</p>
+                    <div class="links">
+                        <!--The links are connected to buttons that lead to the external websited of each museum-->
+                        <a  target="_blank"  href="https://www.google.gr/maps/place/Archaeological+Museum+of+Thessaloniki/@40.6255405,22.9511272,17z/data=!3m1!4b1!4m6!3m5!1s0x14a8385355da9789:0x4f51568587526589!8m2!3d40.6255365!4d22.9537021!16zL20vMDRndDF0?hl=en&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                            </button>
+                        </a>
+                        <a   target="_blank" href="https://www.amth.gr/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+                <div class="item-one-img">
+                    <img src="../../images/archeological.jpg" alt="Image of Archaeological Museum">
+                </div>
+            </div>
+            <div class="item-one hidden">
+                <!--The only difference between the item-one and item-two classes is the position of the images. They alternate with each new div -->
+                <div class="item-two-img">
+                    <img src="../../images/byzantine.jpg" alt="Image of the Museum of Byzantine Culture">
+                </div>
+                <div class="item-one-text">
+                    <h2>Museum of Byzantine Culture</h2>
+                    <p>Dedicated to the art and culture of the Byzantine Empire, the Museum of Byzantine Culture offers a comprehensive look at the region's Byzantine heritage. The museum features an impressive collection of icons, mosaics, frescoes, and manuscripts, as well as educational programs and temporary exhibitions.</p>
+                    <div class="links">
+                        <a  target="_blank"  href="https://www.google.com/maps/place/%CE%9C%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF+%CE%92%CF%85%CE%B6%CE%B1%CE%BD%CF%84%CE%B9%CE%BD%CE%BF%CF%8D+%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CF%83%CE%BC%CE%BF%CF%8D/@40.6239399,22.9529557,17z/data=!3m1!4b1!4m5!3m4!1s0x14a838e322993ebf:0xce288930af2582d5!8m2!3d40.6239647!4d22.9552141?shorturl=1">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                            </button>
+                        </a>
+                        <a  target="_blank"  href="https://www.mbp.gr/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+            </div>
+            <div class="item-one hidden">
+                <div class="item-one-text">
+                    <h2>Thessaloniki Science Center and Technology Museum (NOESIS)</h2>
+                    <p>NOESIS is a modern science center that aims to promote scientific knowledge and technology. The museum features interactive exhibits, a planetarium, a motion simulator, and an impressive collection of technological innovations. It’s a great destination for families and anyone interested in science and technology.</p>
+                    <div class="links">
+                        <a   target="_blank" href="https://www.google.com/maps/place/NOESIS+Science+Center+%26+Technology+Museum/@40.5624246,22.990245,746m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a8408c2f9ede07:0x246e17c7b76f6c6c!8m2!3d40.5624206!4d22.9951159!16s%2Fm%2F02ptdbt?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                            </button>
+                        </a>
+                        <a   target="_blank" href="https://www.noesis.edu.gr/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+                <div class="item-one-img">
+                    <img src="../../images/noesis.jpg" alt="Image of the Thessaloniki Science Center and Technology Museum">
+                </div>
+            </div>
+            <div class="item-one hidden">
+                <div class="item-two-img">
+                    <img src="../../images/jewish-museum.jpg" alt="Image of the Jewish Museum of Thessaloniki">
+                </div>
+                <div class="item-one-text">
+                    <h2>Jewish Museum of Thessaloniki</h2>
+                    <p>This museum is dedicated to preserving the history and heritage of the Jewish community in Thessaloniki, which was one of the largest and most influential in the Mediterranean. The exhibits include documents, photographs, and personal items that tell the story of the community from its origins to its near destruction during the Holocaust.</p>
+                    <div class="links">
+                        <a   target="_blank" href="https://www.google.com/maps/place/Jewish+Museum+of+Thessaloniki/@40.6352221,22.9369318,745m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a839082b7194bd:0x75a28255ad5be80f!8m2!3d40.6352181!4d22.9395067!16s%2Fm%2F04073sw?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-icon.png">
+                            </button>
+                        </a>
+                        <a   target="_blank" href="http://www.jmth.gr/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-icon.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+                
+        </section>
+        <!--Second main section of the culture page that includes the inofrmation and links about the galleries. It is here for semantic purposes, otherwise it is almost the same as the 'Museums' section-->
+        <section id="galleries" class="galleries hidden">
+            <div class="item-one hidden">
+                <div class="item-one-text">
+                    <h2>State Museum of Contemporary Art</h2>
+                    <p>The State Museum of Contemporary Art in Thessaloniki is a hub for modern artistic expression, housing an impressive collection of contemporary artworks. The museum is renowned for its Russian Avant-Garde collection, which is among the most significant in the world. Visitors can explore various exhibitions that include paintings, sculptures, installations, and multimedia works from both Greek and international artists. The museum also hosts workshops, lectures, and educational programs that aim to foster a deeper understanding and appreciation of contemporary art.</p>
+                    <div class="links">
+                        <a  target="_blank"  href="https://google.com/maps/place/MOMus-Museum+of+Modern+Art-Kostaki+Collection/@40.6581145,22.9289885,745m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a839c067b5df39:0xa2b4dc1336889b33!8m2!3d40.6581105!4d22.9315634!16s%2Fm%2F02q20s3?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-red.png">
+                            </button>
+                        </a>
+                        <a  target="_blank"  href="https://www.greekstatemuseum.com/kmst/index.html">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-red.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+                <div class="item-one-img-g">
+                    <img src="../../images/contemporary.jpg" alt="Image of the State Museum of Contemporary Art">
+                </div>
+            </div>
+            <div class="item-one hidden">
+                <div class="item-two-img-g">
+                    <img src="../../images/MOMus.jpg" alt="Image of the Macedonian Museum of Contemporary Art">
+                </div>
+                <div class="item-one-text">
+                    <h2>Macedonian Museum of Contemporary Art</h2>
+                    <p>The Macedonian Museum of Contemporary Art (MMCA) in Thessaloniki is a dynamic cultural institution dedicated to promoting contemporary art. The museum boasts an extensive collection of artworks by prominent Greek and international artists, including paintings, sculptures, video art, and installations. MMCA regularly organizes temporary exhibitions, cultural events, and educational activities that engage visitors of all ages. The museum's mission is to support artistic innovation and dialogue, making it a must-visit destination for art enthusiasts.</p>
+                    <div class="links">
+                        <a  target="_blank" href="https://www.google.com/maps/place/MOMus-Macedonian+Museum+of+Contemporary+Art/@40.6272804,22.9520784,745m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a839003b7544b7:0xe7490c644c6e2cc6!8m2!3d40.6272764!4d22.9546533!16s%2Fm%2F04073yb?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-red.png">
+                            </button>
+                        </a>
+                        <a  target="_blank"  href="https://www.momus.gr/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-red.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+            </div>
+            <div class="item-one hidden">
+                <div class="item-one-text">
+                    <h2>Municipal Art Gallery</h2>
+                    <p>The Municipal Art Gallery of Thessaloniki is a vibrant center for the visual arts, showcasing an eclectic mix of works by both emerging and established artists. The gallery's collection includes pieces from various artistic movements and styles, reflecting the rich cultural heritage of Thessaloniki. In addition to its permanent collection, the gallery hosts rotating exhibitions, artist talks, and workshops that encourage community participation and artistic exploration. The gallery's mission is to make art accessible to all and to celebrate the diversity of artistic expression.</p>
+                    <div class="links">
+                        <a   target="_blank" href="https://www.google.com/maps/place/Municipal+Art+Gallery/@40.5964601,22.9532396,746m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a838d60c43c761:0x12376bde460d9a48!8m2!3d40.5964561!4d22.9558145!16s%2Fm%2F0k0p21d?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-red.png">
+                            </button>
+                        </a>
+                        <a  target="_blank"  href="https://thessaloniki.gr/locations/casa-bianca/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-red.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+                <div class="item-one-img-g">
+                    <img src="../../images/muicipal.jpg" alt="Image of the Municipal Art Gallery">
+                </div>
+            </div>
+            <div class="item-one hidden">
+                <div class="item-two-img-g">
+                    <img src="../../images/alatza.jpg" alt="Image of the Alatza Imaret">
+                </div>
+                <div class="item-one-text">
+                    <h2>Alatza Imaret</h2>
+                    <p>Alatza Imaret is a unique art space located in a historic Ottoman building in Thessaloniki. This cultural center is dedicated to contemporary art and serves as a venue for exhibitions, performances, and cultural events. The architecture of Alatza Imaret adds a distinct charm to the exhibitions, creating a dialogue between the old and the new. The gallery aims to promote artistic innovation and cultural exchange, making it a lively spot for both locals and visitors interested in contemporary art and history.</p>
+                    <div class="links">
+                        <a  target="_blank" href="https://www.google.com/maps/place/Alaca+Imaret/@40.6392252,22.9470704,745m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14a839ac6fae17f9:0x256171ae4f860277!8m2!3d40.6392212!4d22.9496453!16s%2Fm%2F0w33c3h?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                            <button>
+                            <img class="location" style="height: 40px; width: auto;" src="../../images/location-red.png">
+                            </button>
+                        </a>
+                        <a  target="_blank"  href="https://thessaloniki.gr/">
+                            <button>
+                            <img class="website" style="height: 40px; width: auto;" src="../../images/website-red.png">
+                            </button>
+                        </a>
+                        </div>
+                </div>
+                
+        </section>
+    <!-- Footer developed by Chrysa Arampatzi -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="../../index.html" class="logo-link">
+            <div class="logo">
+                <img src="../../images/LogoWhite.png" alt="Thessaloniki Logo">
+                <h1 class="site-title">THE THESSALONIKI <br> SURVIVAL GUIDE</h1>
+            </div>
+            </a>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="../../students/students.html">ABOUT US</a></li>
+                        <li class="dropdown"><a href="Iva/entertainment-main.html">ENTERTAINMENT</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cinemas-theatres.html">Cinemas & Theaters</a></li>
+                                <li><a href="culture.html">Culture</a></li>
+                                <li><a href="events-festivals.html">Events & Festivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Aleksia/KapuraniCulinaryOfThessalonikiAleksia.html">CULINARY</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Aleksia/TipsForTourists.html"> Tips for Tourists</a></li>
+                                <li><a href="../Aleksia/topplaces.html">Top Places</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="../Leandra/krasniqi.html">CITY LIFE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Leandra/krasniqi-daytime.html">Daytime</a></li>
+                                <li><a href="../Leandra/krasniqi-nightlife.html">Nightlife</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Maria/transportation.html">TRANSPORTATION</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </footer>
+    </body>
+</html>
